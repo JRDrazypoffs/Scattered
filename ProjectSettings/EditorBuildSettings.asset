@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Map.unity
     guid: 75ae1aef332c8354b84754495234a56e
+  - enabled: 1
+    path: Assets/Scenes/Antique Store.unity
+    guid: 4d2525290f6573b448e378e04fc9bcd0
   m_configObjects: {}
