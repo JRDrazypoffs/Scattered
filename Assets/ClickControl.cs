@@ -19,10 +19,9 @@ public class ClickControl : MonoBehaviour
 
     private void OnMouseDown(){
         ObjectName = gameObject.name;
-        // UnityEngine.Debug.Log (ObjectName);
+        UnityEngine.Debug.Log (ObjectName);
         Destroy (gameObject);
         Destroy (ObjectNameText);
-        
     }
     
 }
