@@ -4,15 +4,24 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class ClickControl : MonoBehaviour
 {
     public static string ObjectName;
     public GameObject ObjectNameText;
+    public Transform HiddenObjectPos;
+    public Transform SuccessClick;
 
-    // // Start is called before the first frame update
-    // void Start()
-    // {}
+    public AudioSource FoundSound;
+
+    
+
+    // Start is called before the first frame update
+    void Start(){
+        FoundSound = GetComponent<AudioSource>();
+        FoundSound.playOnAwake = false;
+    }
 
     // // Update is called once per frame
     // void Update()
@@ -23,6 +32,10 @@ public class ClickControl : MonoBehaviour
         Debug.Log (ObjectName);
         Destroy (gameObject);
         Destroy (ObjectNameText);
+        FoundSound.Play ();
+        Instantiate(SuccessClick, HiddenObjectPos.position, SuccessClick.rotation);
+        
+
         // HiddenObjectCount++;
 
         // // If found all 10 objects
