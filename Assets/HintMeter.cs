@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class HintMeter : MonoBehaviour
 {
-    public float rgbVal = 0.5f;
+    public float rgbVal = 0.3f;
     public float ColorTimer = 0;
 
     public static bool HintReady = false;
@@ -24,8 +25,8 @@ public class HintMeter : MonoBehaviour
     void Update(){
         ColorTimer += Time.deltaTime;
 
-        if ((ColorTimer >= .5) && (rgbVal < 1)){
-            rgbVal += .05f;
+        if ((ColorTimer >= .30) && (rgbVal < 1)){ //set time to x seconds and the color is not at brightest
+            rgbVal += .02f; //incrementally increase brightness
             ColorTimer = 0;
         }
 
@@ -34,6 +35,7 @@ public class HintMeter : MonoBehaviour
         if(rgbVal >= 1f){
             HintReady = true;
             // HintGlow.GetComponent<ParticleSystem>().enableEmission = true;
+            GetComponent<SpriteRenderer>().color = new Color(0.94f,0.78f,0.37f);//set color to mustard yellow
             var HintGlow = GetComponent<ParticleSystem>();
             HintGlow.Play();
 
@@ -43,8 +45,8 @@ public class HintMeter : MonoBehaviour
     void OnMouseDown(){
         if (HintReady == true){
             HintUsed = true;
-            HintReady =false;
-            rgbVal = 0.5f;
+            HintReady = false;
+            rgbVal = 0.3f;
             // HintGlow.GetComponent<ParticleSystem>().enableEmission = false;
             var HintGlow = GetComponent<ParticleSystem>();
             HintGlow.Stop();
