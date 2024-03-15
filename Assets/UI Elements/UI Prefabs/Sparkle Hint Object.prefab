@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1669936752578345051}
   - component: {fileID: 35681387992152700}
   m_Layer: 0
-  m_Name: Sparkle
+  m_Name: Sparkle Hint Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,7 +45,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2072792744487003370}
   serializedVersion: 8
-  lengthInSec: 0.6
+  lengthInSec: 1
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -120,7 +120,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 2
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -291,7 +291,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 20
+      scalar: 15
       minScalar: 1
       maxCurve:
         serializedVersion: 2

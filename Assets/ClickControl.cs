@@ -12,15 +12,19 @@ public class ClickControl : MonoBehaviour
     public GameObject ObjectNameText;
     public Transform HiddenObjectPos;
     public Transform SuccessClick;
-
+    public AudioClip FoundSFX;
     public AudioSource FoundSound;
 
     
 
     // Start is called before the first frame update
     void Start(){
-        FoundSound = GetComponent<AudioSource>();
-        FoundSound.playOnAwake = false;
+        // // This Will Configure the  AudioSource Component; 
+        // // MAke Sure You added AudioSouce to death Zone;
+        // GetComponent<AudioSource> ().playOnAwake = false;
+		// GetComponent<AudioSource> ().clip = FoundSFX;
+        // FoundSound = GetComponent<AudioSource>();
+        // FoundSound.playOnAwake = false;
     }
 
     // // Update is called once per frame
@@ -32,23 +36,9 @@ public class ClickControl : MonoBehaviour
         Debug.Log (ObjectName);
         Destroy (gameObject);
         Destroy (ObjectNameText);
-        FoundSound.Play ();
+        // FoundSound.Play ();
         Instantiate(SuccessClick, HiddenObjectPos.position, SuccessClick.rotation);
-        
-
-        // HiddenObjectCount++;
-
-        // // If found all 10 objects
-        // if(HiddenObjectCount==10){
-        //     UnlockNewArea();
-        // }
     }
 
-    // public void UnlockNewArea(){
-    //     if(SceneManager.GetActiveScene().buildIndex <= PlayerPrefs.GetInt("ReachedIndex")){
-    //         PlayerPrefs.SetInt("ReachedIndex", SceneManager.GetActiveScene().buildIndex + 1 );
-    //         PlayerPrefs.SetInt("UnlockedArea", PlayerPrefs.GetInt("UnlockedArea", 1) + 1 );
-    //         PlayerPrefs.Save();
-    //     }
-    // }
+
 }
