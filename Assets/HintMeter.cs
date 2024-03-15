@@ -10,11 +10,14 @@ public class HintMeter : MonoBehaviour
     public static bool HintReady = false;
     public static bool HintUsed = false;
     
-    public Transform HintGlow;
-
+    // public Transform HintGlow; //GetComponent<ParticleSystem>().enableEmission method deprecated
+    
     // Start is called before the first frame update
     void Start(){
-        HintGlow.GetComponent<ParticleSystem>().enableEmission = false;
+        // HintGlow.GetComponent<ParticleSystem>().enableEmission = false;
+        var HintGlow = GetComponent<ParticleSystem>();
+        HintGlow.Stop();
+
     }
 
     // Update is called once per frame
@@ -30,7 +33,9 @@ public class HintMeter : MonoBehaviour
 
         if(rgbVal >= 1f){
             HintReady = true;
-            HintGlow.GetComponent<ParticleSystem>().enableEmission = true;
+            // HintGlow.GetComponent<ParticleSystem>().enableEmission = true;
+            var HintGlow = GetComponent<ParticleSystem>();
+            HintGlow.Play();
 
         }
     }
@@ -40,7 +45,9 @@ public class HintMeter : MonoBehaviour
             HintUsed = true;
             HintReady =false;
             rgbVal = 0.5f;
-            HintGlow.GetComponent<ParticleSystem>().enableEmission = false;
+            // HintGlow.GetComponent<ParticleSystem>().enableEmission = false;
+            var HintGlow = GetComponent<ParticleSystem>();
+            HintGlow.Stop();
 
         }
     }
