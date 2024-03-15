@@ -9,8 +9,7 @@ public class AllFound : MonoBehaviour
     public List<GameObject> HiddenObjectList = new List<GameObject>();
 
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start(){
         
     }
 
