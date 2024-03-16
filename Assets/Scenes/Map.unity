@@ -3186,6 +3186,7 @@ GameObject:
   - component: {fileID: 735448444}
   - component: {fileID: 735448443}
   - component: {fileID: 735448445}
+  - component: {fileID: 735448446}
   m_Layer: 5
   m_Name: Map
   m_TagString: Untagged
@@ -3277,6 +3278,30 @@ MonoBehaviour:
   - {fileID: 13008399}
   - {fileID: 671737223}
   - {fileID: 668410252}
+--- !u!114 &735448446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735448440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c608de25b7007434da53d5af44e4797f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sign: {fileID: 1186518275}
+  SignText: {fileID: 1582965110}
+  Building:
+  - {fileID: 408108651}
+  - {fileID: 2034319208}
+  - {fileID: 503563504}
+  - {fileID: 681131340}
+  - {fileID: 13008399}
+  - {fileID: 671737223}
+  - {fileID: 668410252}
+  SignAnimationIn: {fileID: 0}
+  SignAnimationOut: {fileID: 0}
 --- !u!1 &737073410
 GameObject:
   m_ObjectHideFlags: 0
@@ -4953,7 +4978,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 2685b2fc9a94b7349a841e69db39b34a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
@@ -5537,7 +5562,7 @@ GameObject:
   - component: {fileID: 1582965111}
   - component: {fileID: 1582965110}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: Area Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
