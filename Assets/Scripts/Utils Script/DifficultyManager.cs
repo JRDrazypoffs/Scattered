@@ -5,7 +5,7 @@ using UnityEngine;
 public class DifficultyManager : MonoBehaviour
 {
     private int DifficultyLevel = PlayerPrefs.GetInt("Difficulty Level");
-    // Level Guide: 1 Easy, 2 Moderate, 3 Hard
+    // Level Guide: 0 Easy, 1 Moderate, 2 Hard based on dropdown array
 
     // Start is called before the first frame update
     void Start(){
@@ -15,11 +15,11 @@ public class DifficultyManager : MonoBehaviour
     // Update is called once per frame
     void Update(){
 
-        if(DifficultyLevel == 1){
+        if(DifficultyLevel == 0){
             // Enable Tooltip
             // Disable Timer
         }
-        else if(DifficultyLevel == 2){
+        else if(DifficultyLevel == 1){
             // Disable Tooltip
             // Disable Timer
         }
