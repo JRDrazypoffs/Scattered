@@ -13,7 +13,7 @@ public class TooltipsDisabler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int DifficultyLevel = 1;
+        int DifficultyLevel = 0;
         if(DifficultyLevel == 1||DifficultyLevel == 2){
             for(int i = 0; i < HOListLabelBtns.Length; i++){
                 HOListLabelBtns[i].interactable = false;
