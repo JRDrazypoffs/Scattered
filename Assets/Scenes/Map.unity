@@ -2559,7 +2559,6 @@ MonoBehaviour:
   AreaLabel: {fileID: 823235083}
   Sign: {fileID: 1186518275}
   signAnimator: {fileID: 1186518280}
-  AreaName: Cafe
 --- !u!1 &590847321
 GameObject:
   m_ObjectHideFlags: 0
@@ -3595,7 +3594,6 @@ MonoBehaviour:
   AreaLabel: {fileID: 299954374}
   Sign: {fileID: 1186518275}
   signAnimator: {fileID: 1186518280}
-  AreaName: Antique Store
 --- !u!1 &697839313
 GameObject:
   m_ObjectHideFlags: 0
@@ -3842,7 +3840,6 @@ MonoBehaviour:
   AreaLabel: {fileID: 82948774}
   Sign: {fileID: 1186518275}
   signAnimator: {fileID: 1186518280}
-  AreaName: Library
 --- !u!1 &721254947
 GameObject:
   m_ObjectHideFlags: 0
@@ -5194,7 +5191,6 @@ MonoBehaviour:
   AreaLabel: {fileID: 1642378261}
   Sign: {fileID: 1186518275}
   signAnimator: {fileID: 1186518280}
-  AreaName: Campsite
 --- !u!1 &944404809
 GameObject:
   m_ObjectHideFlags: 0
@@ -7228,7 +7224,6 @@ MonoBehaviour:
   AreaLabel: {fileID: 727402821}
   Sign: {fileID: 1186518275}
   signAnimator: {fileID: 1186518280}
-  AreaName: Beach
 --- !u!1 &1279035765
 GameObject:
   m_ObjectHideFlags: 0
@@ -7870,7 +7865,6 @@ MonoBehaviour:
   AreaLabel: {fileID: 1089595953}
   Sign: {fileID: 1186518275}
   signAnimator: {fileID: 1186518280}
-  AreaName: Museum
 --- !u!1 &1515656476
 GameObject:
   m_ObjectHideFlags: 0
@@ -9512,7 +9506,6 @@ MonoBehaviour:
   AreaLabel: {fileID: 1543468490}
   Sign: {fileID: 1186518275}
   signAnimator: {fileID: 1186518280}
-  AreaName: Central Park
 --- !u!1 &2021858725
 GameObject:
   m_ObjectHideFlags: 0
