@@ -5,18 +5,21 @@ using UnityEngine.UI;
 
 public class TooltipsDisabler : MonoBehaviour
 {
-    private int DifficultyLevel = PlayerPrefs.GetInt("Difficulty Level");
+    // Cannot use get method from monobehaviour
+    // TODO: find another solution for this
+    // private int DifficultyLevel = PlayerPrefs.GetInt("Player Pref Difficulty");
     // public List<GameObject> HiddenObjectList = new List<GameObject>();
     public Button[] HOListLabelBtns;
     // Start is called before the first frame update
     void Start()
     {
-        if(DifficultyLevel == 2||DifficultyLevel == 3){
+        int DifficultyLevel = 1;
+        if(DifficultyLevel == 1||DifficultyLevel == 2){
             for(int i = 0; i < HOListLabelBtns.Length; i++){
                 HOListLabelBtns[i].interactable = false;
             }
         }
-        else if(DifficultyLevel==1){
+        else if(DifficultyLevel==0){
             for(int i = 0; i < HOListLabelBtns.Length; i++){
                 HOListLabelBtns[i].interactable = true;
             }

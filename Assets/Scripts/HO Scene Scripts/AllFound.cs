@@ -8,6 +8,12 @@ public class AllFound : MonoBehaviour
     // public string[] HiddenObjects;
     public List<GameObject> HiddenObjectList = new List<GameObject>();
 
+    public AudioSource LevelCompleteSound;
+    public AudioSource BGMPlayer;
+
+    public GameObject HintBtn;
+    public GameObject LevelCompletePanel;
+
     // Start is called before the first frame update
     void Start(){
         
@@ -23,7 +29,11 @@ public class AllFound : MonoBehaviour
  
             if (HiddenObjectList.Count == 0){
                 print("Area Cleared");
+                Destroy(HintBtn);
+                BGMPlayer.Stop();
+                LevelCompleteSound.Play();
                 UnlockNewArea();
+                LevelCompletePanel.SetActive(true);
             }
         }
     }

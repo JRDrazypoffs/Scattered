@@ -6,24 +6,20 @@ using UnityEngine.UI;
 
 public class SelectArea : MonoBehaviour
 {
-    // // Start is called before the first frame update
-    // void Start()
-    // {}
-    // // Update is called once per frame
-    // void Update()
-    // {}
-
     public Button[] buttons;
+    // public GameObject[] Area;
 
     private void Awake(){
         int UnlockedLevel = PlayerPrefs.GetInt("Unlocked Area",1);
 
         for(int i = 0; i < buttons.Length; i++){
             buttons[i].interactable = false;
+            // Area[i].GetComponent<Collider2D>().isTrigger = false;
         }
 
         for(int i = 0; i < UnlockedLevel; i++){
             buttons[i].interactable = true;
+            // Area[i].GetComponent<Collider2D>().isTrigger = true;
         }
     }
 

@@ -63,11 +63,17 @@ public class PlayerSettings : MonoBehaviour
         // TODO:
         // Get user settings from player prefs
         // set user settings as default value in inputs
+        int DifficultyIndex = 1;//for testing
+        PlayerPrefs.SetInt("Player Pref Difficulty",DifficultyIndex);
+
     }
 
     public void SetMasterVolume(float MasterVolume){
         // Debug.Log(MasterVolume);
         MasterAudioMixer.SetFloat("MasterVolume", MasterVolume);
+        PlayerPrefs.SetFloat("Player Pref Volume",MasterVolume);
+        // TODO: move this to onsubmit afterwards!
+        PlayerPrefs.Save();
     }
 
     // TODO: Set Separate Volumes for BGM and SFX
@@ -95,4 +101,5 @@ public class PlayerSettings : MonoBehaviour
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
     }
 
+    
 }
