@@ -23,9 +23,10 @@ public class PopController : MonoBehaviour
     void Update(){
         if(PanelItem.activeSelf == true){
                 // use this silly method to stop the system from playing the sfx in infinite loop until triggered
-                SoundTrigger++;
-                if(SoundTrigger == 99){
+                if(SoundTrigger == 10000){
                     SoundTrigger = 0;
+                }else{
+                    SoundTrigger++;
                 }
         }
         
@@ -33,7 +34,7 @@ public class PopController : MonoBehaviour
         if(SoundTrigger==1){
             PopSound.Play();
             popAnimator.Play("PopAnimation");
-            SoundTrigger = 99;
+            // SoundTrigger = 99;
         }
     }
 }

@@ -41,10 +41,10 @@ public class HintMeter : MonoBehaviour
         if(rgbVal >= 1f){
             HintReady = true;
             // use this silly method to stop the system from playing the sfx in infinite loop until triggered
-                SoundTrigger++;
-                if(SoundTrigger == 99){
-                    SoundTrigger = 0;
-                }
+            SoundTrigger++;
+            if(SoundTrigger==10000){
+                SoundTrigger=0;
+            }
 
             // HintGlow.GetComponent<ParticleSystem>().enableEmission = true;
             GetComponent<SpriteRenderer>().color = new Color(0.94f,0.78f,0.37f);//set color to mustard yellow
@@ -55,7 +55,7 @@ public class HintMeter : MonoBehaviour
         // let sfx audio only play once
         if(SoundTrigger==1){
             HintReadySound.Play();
-            SoundTrigger = 99;
+            // SoundTrigger = 99;
         }
     }
 
