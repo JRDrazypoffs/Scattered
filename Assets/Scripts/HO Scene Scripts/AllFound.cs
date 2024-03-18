@@ -7,7 +7,6 @@ public class AllFound : MonoBehaviour
 {
     // public string[] HiddenObjects;
     public List<GameObject> HiddenObjectList = new List<GameObject>();
-
     public AudioSource LevelCompleteSound;
     public AudioSource BGMPlayer;
 

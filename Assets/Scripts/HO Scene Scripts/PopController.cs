@@ -22,19 +22,20 @@ public class PopController : MonoBehaviour
     // Update is called once per frame
     void Update(){
         if(PanelItem.activeSelf == true){
-                // use this silly method to stop the system from playing the sfx in infinite loop until triggered
-                if(SoundTrigger == 10000){
-                    SoundTrigger = 0;
-                }else{
-                    SoundTrigger++;
-                }
+            // use this silly method to stop the system from playing the sfx in infinite loop until triggered
+            if(SoundTrigger == 10000){
+                SoundTrigger = 0;
+            }else{
+                SoundTrigger++;
+            }
+        }else{
+            SoundTrigger = 0;
         }
         
         // let sfx audio only play once
         if(SoundTrigger==1){
             PopSound.Play();
             popAnimator.Play("PopAnimation");
-            // SoundTrigger = 99;
         }
     }
 }

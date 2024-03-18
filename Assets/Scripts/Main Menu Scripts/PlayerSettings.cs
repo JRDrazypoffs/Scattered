@@ -78,15 +78,15 @@ public class PlayerSettings : MonoBehaviour
 
     // TODO: Set Separate Volumes for BGM and SFX
 
-    // public void SetBGMVolume(float BGMVolume){
-    //     // Debug.Log(MasterVolume);
-    //     MasterAudioMixer.SetFloat("BGMVolume", BGMVolume);
-    // }
+    public void SetBGMVolume(float BGMVolume){
+        // Debug.Log(MasterVolume);
+        MasterAudioMixer.SetFloat("BGMVolume", BGMVolume);
+    }
 
-    // public void SetSFXVolume(float SFXVolume){
-    //     // Debug.Log(MasterVolume);
-    //     MasterAudioMixer.SetFloat("SFXVolume", SFXVolume);
-    // }
+    public void SetSFXVolume(float SFXVolume){
+        // Debug.Log(MasterVolume);
+        MasterAudioMixer.SetFloat("SFXVolume", SFXVolume);
+    }
 
     public void SetGraphicsQuality(int QualityIndex){
         QualitySettings.SetQualityLevel(QualityIndex);
