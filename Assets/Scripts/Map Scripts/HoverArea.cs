@@ -15,8 +15,11 @@ public class HoverArea1 : MonoBehaviour
 
     public static int SoundTrigger = 0;
 
+    // SFXPlayOnce sfxPlayOnce;//DIdnt behave as intended SMH
+    // private void Awake(){
+    //     sfxPlayOnce = GameObject.FindGameObjectWithTag("Audio").GetComponent<SFXPlayOnce>();
+    // }
 
-    // public string AreaName;
 
     // This Script uses sprite data not UI button data
     public void Start(){
@@ -31,6 +34,8 @@ public class HoverArea1 : MonoBehaviour
         AreaLabel.SetActive(true);
         Sign.SetActive(true);
         signAnimator.Play("SignAnimationIn");
+
+        // sfxPlayOnce.PlaySFX(sfxPlayOnce.PopSFX); >:( behaves weirdly SMH
 
         // use this silly method to stop the system from playing the sfx in infinite loop until triggered
         SoundTrigger++;
@@ -55,17 +60,14 @@ public class HoverArea1 : MonoBehaviour
 
     }
 
+    // Keep for reference, the Map uses the UI buttons layered over the sprites.
+    // Sprites are used to use the on mouse over function for the sign animation.
+    
     // public void OnMouseDown(){
     //     // EnterArea(AreaName);
     // }
-    
     // public void EnterArea(string AreaName){
     //     SceneManager.LoadScene(AreaName);
     // }
 
-    // private IEnumerator DelayText(){
-    //     //set delay time
-    //     yield return  new WaitForSeconds(0.2f);
-    //     AreaLabel.SetActive(false);
-    // }
 }
