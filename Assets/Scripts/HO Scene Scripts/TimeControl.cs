@@ -22,7 +22,7 @@ public class TimeControl : MonoBehaviour
 
 
     // NOTE: Timer will not run if not set active
-    
+
 
     // Start is called before the first frame update
     void Start(){
