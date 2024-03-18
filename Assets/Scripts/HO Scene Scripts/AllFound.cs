@@ -12,6 +12,7 @@ public class AllFound : MonoBehaviour
     public AudioSource BGMPlayer;
 
     public GameObject HintBtn;
+    public GameObject Timer;
     public GameObject LevelCompletePanel;
 
     // Start is called before the first frame update
@@ -30,6 +31,7 @@ public class AllFound : MonoBehaviour
             if (HiddenObjectList.Count == 0){
                 print("Area Cleared");
                 Destroy(HintBtn);
+                Destroy(Timer);
                 BGMPlayer.Stop();
                 LevelCompleteSound.Play();
                 UnlockNewArea();

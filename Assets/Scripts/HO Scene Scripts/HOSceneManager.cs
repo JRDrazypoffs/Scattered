@@ -8,6 +8,7 @@ using UnityEngine.UI;
 
 public class SceneMenu : MonoBehaviour
 {
+    public Animator HandAnimator;
 
     // // Start is called before the first frame update
     // void Start(){
