@@ -34,10 +34,6 @@ public class PlayerSettings : MonoBehaviour
     private int TempResolutionIndex;
     private int TempIsFullscreen;
 
-    // currently will save settings if player never input before
-    // but if want to update settings the value is fixed to prev settings
-    // not working as intended maybe need to change the .value parameter to stg else.
-
     // Start is called before the first frame update
     void Start(){
         // Resolution Setting
@@ -123,10 +119,11 @@ public class PlayerSettings : MonoBehaviour
         if (PlayerPrefs.HasKey("Settings Has Set")){
             // preset field
             difficultyDropdown.value = TempDifficultyIndex;
-            difficultyDropdown.RefreshShownValue();
             // allow edit
             TempDifficultyIndex = DifficultyIndex;
-
+            // change the value when value changed
+            difficultyDropdown.value = TempDifficultyIndex;
+            difficultyDropdown.RefreshShownValue();
         }else{
             TempDifficultyIndex = DifficultyIndex;
         }
@@ -136,10 +133,12 @@ public class PlayerSettings : MonoBehaviour
         if (PlayerPrefs.HasKey("Settings Has Set")){
             // preset field
             graphicsDropdown.value = TempQualityIndex;
-            graphicsDropdown.RefreshShownValue();
             // allow edit
             QualitySettings.SetQualityLevel(QualityIndex);
             TempQualityIndex = QualityIndex;
+            // change the value when value changed
+            graphicsDropdown.value = TempQualityIndex;
+            graphicsDropdown.RefreshShownValue();
         }else{
             QualitySettings.SetQualityLevel(QualityIndex);
             TempQualityIndex = QualityIndex;
@@ -150,13 +149,15 @@ public class PlayerSettings : MonoBehaviour
         if (PlayerPrefs.HasKey("Settings Has Set")){
             // preset to previous saved field
             resolutionDropdown.value = TempResolutionIndex;
-            resolutionDropdown.RefreshShownValue();
             Resolution resolution = resolutions[resolutionIndex];
             Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
             // Allow user edit field
             resolution = resolutions[resolutionIndex];
             Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
             TempResolutionIndex = resolutionIndex;
+            // change the value when value changed
+            resolutionDropdown.value = TempResolutionIndex;
+            resolutionDropdown.RefreshShownValue();
         }else{
             Resolution resolution = resolutions[resolutionIndex];
             Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
@@ -250,5 +251,8 @@ public class PlayerSettings : MonoBehaviour
         SetFullscreen(toggleState);
     }
 
+    public void DeleteData(){
+        PlayerPrefs.DeleteAll();
+    }
     
 }
