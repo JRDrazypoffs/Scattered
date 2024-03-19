@@ -5,15 +5,11 @@ using UnityEngine.UI;
 
 public class TimerDisabler : MonoBehaviour
 {
-    // Cannot use get method from monobehaviour
-    // TODO: find another solution for this
-    // private int DifficultyLevel = PlayerPrefs.GetInt("Player Pref Difficulty");
-    // public List<GameObject> HiddenObjectList = new List<GameObject>();
 
     public GameObject TimerUI;
     // Start is called before the first frame update
     void Start(){
-        int DifficultyLevel = 2;
+        int DifficultyLevel = PlayerPrefs.GetInt("Player Pref Difficulty");
         if(DifficultyLevel == 0||DifficultyLevel == 1){
             TimerUI.SetActive(false);
         }
