@@ -878,6 +878,7 @@ MonoBehaviour:
   HintBtn: {fileID: 1158956069}
   Timer: {fileID: 1380900290}
   LevelCompletePanel: {fileID: 153091341}
+  SuccessMessage: {fileID: 133793193}
 --- !u!114 &68048409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1754,7 +1755,7 @@ GameObject:
   - component: {fileID: 133793194}
   - component: {fileID: 133793193}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Success Message
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2085,8 +2086,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 0.000050863, y: 0}
+  m_SizeDelta: {x: 800, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &154107810
 GameObject:
@@ -2212,9 +2213,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 374979180}
-  - {fileID: 995399553}
   - {fileID: 446882754}
   - {fileID: 1483425573}
+  - {fileID: 995399553}
   m_Father: {fileID: 302851096}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2591,8 +2592,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.95880127, y: -0.71980286}
-  m_SizeDelta: {x: 717.2586, y: 366.7806}
+  m_AnchoredPosition: {x: 0.000030517578, y: 0.000030517578}
+  m_SizeDelta: {x: 0.000061035, y: 0.0001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &211369341
 MonoBehaviour:
@@ -2614,7 +2615,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3623,15 +3624,15 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 993896797}
-  - {fileID: 1335667664}
   - {fileID: 1674505849}
   - {fileID: 797419748}
+  - {fileID: 1335667664}
   m_Father: {fileID: 153091342}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00012207031, y: 0.000061035156}
-  m_SizeDelta: {x: 599.99994, y: 249.99997}
+  m_AnchoredPosition: {x: 0.000061035156, y: 0.000061035156}
+  m_SizeDelta: {x: -100.00006, y: -100.00003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &274303480
 MonoBehaviour:
@@ -3888,9 +3889,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "You have found a mysterious music box!\nBut the cylinder mechanism is
-    missing! Your task is to look for it. \nBut don't forget to also keep an eye
-    out for Todd's missing son!"
+  m_text: "You have found a <color=#F0C75E><b>Mysterious Music Box</b></color>!\nBut
+    the <color=#F0C75E><b>Cylinder Mechanism</b></color> is <color=red><b>missing</b></color>!
+    Your task is to look for it. \nBut don't forget to also keep an eye out for Todd's
+    missing son!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8277,15 +8279,15 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1841061680}
-  - {fileID: 1314242168}
   - {fileID: 566327856}
   - {fileID: 1739031233}
+  - {fileID: 1314242168}
   m_Father: {fileID: 153091342}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00012207031, y: 0.000061035156}
-  m_SizeDelta: {x: 599.99994, y: 249.99997}
+  m_AnchoredPosition: {x: 0.000061035156, y: 0.000061035156}
+  m_SizeDelta: {x: -100.00006, y: -100.00003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &648227716
 MonoBehaviour:
@@ -8852,9 +8854,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 949295952}
-  - {fileID: 1651813373}
   - {fileID: 1515733667}
   - {fileID: 423530133}
+  - {fileID: 1651813373}
   m_Father: {fileID: 1311478171}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -13107,7 +13109,7 @@ GameObject:
   - component: {fileID: 1024863674}
   - component: {fileID: 1024863676}
   m_Layer: 5
-  m_Name: Clue Panel
+  m_Name: Clue Bubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15219,8 +15221,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.9588623, y: -0.7197876}
-  m_SizeDelta: {x: 17.258606, y: 16.78061}
+  m_AnchoredPosition: {x: 0, y: 0.000015258789}
+  m_SizeDelta: {x: 0, y: -0.000030518}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1239172519
 MonoBehaviour:
@@ -15242,7 +15244,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15317,10 +15319,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Oh no, you have used up all your time in this area!
+  m_text: '<b>Oh no!</b>
 
-    Restart this
-    level or return to the map menu?'
+    You have used up <b>all your time</b> in this area!
+
+    <color=#509D69><b>Restart
+    this level</b></color> or <color=#E1574C><b>return to the map menu</b></color>?'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -16341,7 +16345,7 @@ GameObject:
   - component: {fileID: 1314242170}
   - component: {fileID: 1314242169}
   m_Layer: 5
-  m_Name: Tick Panel
+  m_Name: Tick Bubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16758,7 +16762,7 @@ GameObject:
   - component: {fileID: 1335667666}
   - component: {fileID: 1335667665}
   m_Layer: 5
-  m_Name: Clue Panel
+  m_Name: Clue Bubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20396,7 +20400,7 @@ GameObject:
   - component: {fileID: 1651813376}
   - component: {fileID: 1651813375}
   m_Layer: 5
-  m_Name: Paused
+  m_Name: Pause Bubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25977,7 +25981,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 378295574047588486, guid: f693a453c2e7ced48be81618191de116, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -175
+      value: -95
       objectReference: {fileID: 0}
     - target: {fileID: 378731931503000895, guid: f693a453c2e7ced48be81618191de116, type: 3}
       propertyPath: m_AnchorMax.x
@@ -26033,7 +26037,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 694023068797994862, guid: f693a453c2e7ced48be81618191de116, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -175
+      value: -95
       objectReference: {fileID: 0}
     - target: {fileID: 1582656198054531933, guid: f693a453c2e7ced48be81618191de116, type: 3}
       propertyPath: m_AnchorMax.y
@@ -26197,7 +26201,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2401558678676980529, guid: f693a453c2e7ced48be81618191de116, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -135
+      value: -55
       objectReference: {fileID: 0}
     - target: {fileID: 2839551553980070066, guid: f693a453c2e7ced48be81618191de116, type: 3}
       propertyPath: m_AnchorMax.y
@@ -26221,7 +26225,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2839551553980070066, guid: f693a453c2e7ced48be81618191de116, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -135
+      value: -55
       objectReference: {fileID: 0}
     - target: {fileID: 2881631828060053202, guid: f693a453c2e7ced48be81618191de116, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
@@ -26250,6 +26254,10 @@ PrefabInstance:
     - target: {fileID: 2881631828060053202, guid: f693a453c2e7ced48be81618191de116, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2996305857797812340, guid: f693a453c2e7ced48be81618191de116, type: 3}
+      propertyPath: m_Sprite
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3075316174376300308, guid: f693a453c2e7ced48be81618191de116, type: 3}
       propertyPath: m_AnchorMax.y
@@ -26535,6 +26543,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -20
       objectReference: {fileID: 0}
+    - target: {fileID: 5459491747738383431, guid: f693a453c2e7ced48be81618191de116, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5459491747738383431, guid: f693a453c2e7ced48be81618191de116, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -0.000091553
+      objectReference: {fileID: 0}
+    - target: {fileID: 5459491747738383431, guid: f693a453c2e7ced48be81618191de116, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5459491747738383431, guid: f693a453c2e7ced48be81618191de116, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.000045776367
+      objectReference: {fileID: 0}
     - target: {fileID: 5555011151547166405, guid: f693a453c2e7ced48be81618191de116, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -26557,7 +26581,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5555011151547166405, guid: f693a453c2e7ced48be81618191de116, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -95
+      value: -15
       objectReference: {fileID: 0}
     - target: {fileID: 5985472535748226863, guid: f693a453c2e7ced48be81618191de116, type: 3}
       propertyPath: m_AnchorMax.y
@@ -26729,7 +26753,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7168869197099186022, guid: f693a453c2e7ced48be81618191de116, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -95
+      value: -15
       objectReference: {fileID: 0}
     - target: {fileID: 7407387272433200252, guid: f693a453c2e7ced48be81618191de116, type: 3}
       propertyPath: m_AnchorMax.y
@@ -27313,15 +27337,15 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1814511161}
-  - {fileID: 1024863673}
   - {fileID: 1598436393}
   - {fileID: 1904962655}
+  - {fileID: 1024863673}
   m_Father: {fileID: 153091342}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00012207031, y: 0.000061035156}
-  m_SizeDelta: {x: 599.99994, y: 249.99997}
+  m_AnchoredPosition: {x: 0.000061035156, y: 0.000061035156}
+  m_SizeDelta: {x: -100.00006, y: -100.00003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1777250467
 MonoBehaviour:
@@ -32367,10 +32391,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'You have found a Coffee Grinder!
+  m_text: 'You have found a <color=#F0C75E><b>Coffee Grinder</b></color>!
 
-    Bring it to the cafe owner next
-    door!'
+    Bring
+    it to the <color=#60B2D7><b>Cafe Owner</b></color> next door!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

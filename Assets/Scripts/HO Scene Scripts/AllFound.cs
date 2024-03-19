@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -14,9 +16,13 @@ public class AllFound : MonoBehaviour
     public GameObject Timer;
     public GameObject LevelCompletePanel;
 
+    public TMP_Text SuccessMessage;
+    private string Username;
+
     // Start is called before the first frame update
     void Start(){
-        
+        string TempUsername = PlayerPrefs.GetString("Player Pref Username");
+        Username = TempUsername;
     }
 
     // Update is called once per frame
@@ -35,6 +41,7 @@ public class AllFound : MonoBehaviour
                 LevelCompleteSound.Play();
                 UnlockNewArea();
                 LevelCompletePanel.SetActive(true);
+                SuccessMessage.text = "<b>Congratulations</b> <color=#F0C75E><b>"+ Username + "</b></color>, \nyou have <color=#509D69><b>completed</b></color> this level!";
             }
         }
     }

@@ -233,14 +233,14 @@ public class PlayerSettings : MonoBehaviour
             toggleState=false;
         }
 
-        Debug.Log("Master Vol: "+TempMasterVolume);
-        Debug.Log("BGM Vol: "+TempBGMVolume);
-        Debug.Log("SFX Vol: "+TempSFXVolume);
-        Debug.Log("Username: "+Username);
-        Debug.Log("Difficulty Index: "+TempDifficultyIndex);
-        Debug.Log("Graphic Index: "+TempQualityIndex);
-        Debug.Log("Resolution Index: "+TempResolutionIndex);
-        Debug.Log("Fullscreen: "+TempIsFullscreen);
+        // Debug.Log("Master Vol: "+TempMasterVolume);
+        // Debug.Log("BGM Vol: "+TempBGMVolume);
+        // Debug.Log("SFX Vol: "+TempSFXVolume);
+        // Debug.Log("Username: "+Username);
+        // Debug.Log("Difficulty Index: "+TempDifficultyIndex);
+        // Debug.Log("Graphic Index: "+TempQualityIndex);
+        // Debug.Log("Resolution Index: "+TempResolutionIndex);
+        // Debug.Log("Fullscreen: "+TempIsFullscreen);
 
         SetMasterVolume(TempMasterVolume);
         SetBGMVolume(TempBGMVolume);

@@ -32,7 +32,7 @@ public class HintMeter : MonoBehaviour
         ColorTimer += Time.deltaTime;
 
         if ((ColorTimer >= .30) && (rgbVal < 1)){ //set time to x seconds and the color is not at brightest
-            rgbVal += .02f; //incrementally increase brightness
+            rgbVal += .005f; //incrementally increase brightness
             ColorTimer = 0;
         }
 

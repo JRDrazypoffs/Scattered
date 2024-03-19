@@ -12,11 +12,6 @@ public class ShowHint : MonoBehaviour
     public AudioSource ShowHintSoundGliss;
     public AudioSource ShowHintSoundChimes;
 
-    // Start is called before the first frame update
-    void Start(){
-        
-    }
-
     // Update is called once per frame
     void Update(){
         for (int i = HiddenObjects.Count - 1; i >= 0; i--){
