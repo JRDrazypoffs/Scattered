@@ -40,14 +40,6 @@ public class PlayerSettings : MonoBehaviour
 
     // Start is called before the first frame update
     void Start(){
-        // check if user has set settings
-        if(PlayerPrefs.HasKey("Settings Has Set")){
-            Debug.Log("you have all settings data stored");
-            LoadData();
-        }else{
-            Debug.Log("please set your settings");
-        }
-
         // Resolution Setting
         resolutions = Screen.resolutions;
 
@@ -73,16 +65,26 @@ public class PlayerSettings : MonoBehaviour
         resolutionDropdown.AddOptions(options);
         resolutionDropdown.value = currentResolutionIndex;
         resolutionDropdown.RefreshShownValue();
-    }
 
-    // // Update is called once per frame
-    // void Update(){
-    // }
+        
+        // check if user has set settings
+        if(PlayerPrefs.HasKey("Settings Has Set")){
+            Debug.Log("you have all settings data stored");
+            LoadData();
+        }else{
+            Debug.Log("please set your settings");
+        }
+
+    }
 
     public void SetMasterVolume(float MasterVolume){
         if (PlayerPrefs.HasKey("Settings Has Set")){
+            // preset field
             masterSlider.value = TempMasterVolume;
-            // MasterAudioMixer.SetFloat("MasterVolume", TempMasterVolume);
+            MasterAudioMixer.SetFloat("MasterVolume", TempMasterVolume);
+            // allow edit
+            MasterAudioMixer.SetFloat("MasterVolume", MasterVolume);
+            TempMasterVolume = MasterVolume;
         }else{
             MasterAudioMixer.SetFloat("MasterVolume", MasterVolume);
             TempMasterVolume = MasterVolume;
@@ -91,8 +93,12 @@ public class PlayerSettings : MonoBehaviour
 
     public void SetBGMVolume(float BGMVolume){
         if (PlayerPrefs.HasKey("Settings Has Set")){
+            // preset field
             bgmSlider.value = TempBGMVolume;
-            // MasterAudioMixer.SetFloat("BGMVolume", TempBGMVolume);
+            MasterAudioMixer.SetFloat("BGMVolume", TempBGMVolume);
+            // allow edit
+            MasterAudioMixer.SetFloat("BGMVolume", BGMVolume);
+            TempBGMVolume = BGMVolume;
         }else{
             MasterAudioMixer.SetFloat("BGMVolume", BGMVolume);
             TempBGMVolume = BGMVolume;
@@ -101,8 +107,12 @@ public class PlayerSettings : MonoBehaviour
 
     public void SetSFXVolume(float SFXVolume){
         if (PlayerPrefs.HasKey("Settings Has Set")){
+            // preset field
             sfxSlider.value = TempSFXVolume;
-            // MasterAudioMixer.SetFloat("SFXVolume", TempSFXVolume);
+            MasterAudioMixer.SetFloat("SFXVolume", TempSFXVolume);
+            // allow edit
+            MasterAudioMixer.SetFloat("SFXVolume", SFXVolume);
+            TempSFXVolume = SFXVolume;
         }else{
             MasterAudioMixer.SetFloat("SFXVolume", SFXVolume);
             TempSFXVolume = SFXVolume;
@@ -111,7 +121,12 @@ public class PlayerSettings : MonoBehaviour
 
     public void SetDifficulty(int DifficultyIndex){
         if (PlayerPrefs.HasKey("Settings Has Set")){
+            // preset field
             difficultyDropdown.value = TempDifficultyIndex;
+            difficultyDropdown.RefreshShownValue();
+            // allow edit
+            TempDifficultyIndex = DifficultyIndex;
+
         }else{
             TempDifficultyIndex = DifficultyIndex;
         }
@@ -119,7 +134,12 @@ public class PlayerSettings : MonoBehaviour
 
     public void SetGraphicsQuality(int QualityIndex){
         if (PlayerPrefs.HasKey("Settings Has Set")){
+            // preset field
             graphicsDropdown.value = TempQualityIndex;
+            graphicsDropdown.RefreshShownValue();
+            // allow edit
+            QualitySettings.SetQualityLevel(QualityIndex);
+            TempQualityIndex = QualityIndex;
         }else{
             QualitySettings.SetQualityLevel(QualityIndex);
             TempQualityIndex = QualityIndex;
@@ -128,9 +148,15 @@ public class PlayerSettings : MonoBehaviour
 
     public void SetResolution(int resolutionIndex){
         if (PlayerPrefs.HasKey("Settings Has Set")){
+            // preset to previous saved field
             resolutionDropdown.value = TempResolutionIndex;
+            resolutionDropdown.RefreshShownValue();
             Resolution resolution = resolutions[resolutionIndex];
             Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+            // Allow user edit field
+            resolution = resolutions[resolutionIndex];
+            Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+            TempResolutionIndex = resolutionIndex;
         }else{
             Resolution resolution = resolutions[resolutionIndex];
             Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
@@ -140,10 +166,19 @@ public class PlayerSettings : MonoBehaviour
 
     public void SetFullscreen(bool IsFullscreen){
         if (PlayerPrefs.HasKey("Settings Has Set")){
+            // preset to previous saved field
             if(TempIsFullscreen == 1){
                 Screen.fullScreen = true;
             }else{
                 Screen.fullScreen = false;
+            }
+            // Allow user edit field
+            Screen.fullScreen = IsFullscreen;
+            // convert bool to int cause playerpref cannot set int
+            if(IsFullscreen==true){
+                TempIsFullscreen = 1;
+            }else{
+                TempIsFullscreen = 0;
             }
         }else{
             Screen.fullScreen = IsFullscreen;
@@ -179,6 +214,7 @@ public class PlayerSettings : MonoBehaviour
     }
 
     private void LoadData(){
+        bool toggleState;
         string Username     = PlayerPrefs.GetString("Player Pref Username");
         UsernameInput.text = Username;
 
@@ -190,6 +226,12 @@ public class PlayerSettings : MonoBehaviour
         TempResolutionIndex = PlayerPrefs.GetInt("Player Pref Resolution Index");
         TempIsFullscreen    = PlayerPrefs.GetInt("Player Pref IsFullscreen");
 
+        if(TempIsFullscreen == 1){
+            toggleState=true;
+        }else{
+            toggleState=false;
+        }
+
         Debug.Log("Master Vol: "+TempMasterVolume);
         Debug.Log("BGM Vol: "+TempBGMVolume);
         Debug.Log("SFX Vol: "+TempSFXVolume);
@@ -199,6 +241,13 @@ public class PlayerSettings : MonoBehaviour
         Debug.Log("Resolution Index: "+TempResolutionIndex);
         Debug.Log("Fullscreen: "+TempIsFullscreen);
 
+        SetMasterVolume(TempMasterVolume);
+        SetBGMVolume(TempBGMVolume);
+        SetSFXVolume(TempSFXVolume);
+        SetDifficulty(TempDifficultyIndex);
+        SetGraphicsQuality(TempQualityIndex);
+        SetResolution(TempResolutionIndex);
+        SetFullscreen(toggleState);
     }
 
     
