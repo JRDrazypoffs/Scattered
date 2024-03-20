@@ -2157,7 +2157,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 498024006}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2120158587}
+        m_TargetAssemblyTypeName: BlockerPanelUtil, Assembly-CSharp
+        m_MethodName: OnBlockerClose
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &498024006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2454,6 +2466,18 @@ MonoBehaviour:
       - m_Target: {fileID: 590847322}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1667692986}
+        m_TargetAssemblyTypeName: BlockerPanelUtil, Assembly-CSharp
+        m_MethodName: OnBlockerClose
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8429,12 +8453,40 @@ PrefabInstance:
       value: -15
       objectReference: {fileID: 0}
     - target: {fileID: 3622978874382910945, guid: f693a453c2e7ced48be81618191de116, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622978874382910945, guid: f693a453c2e7ced48be81618191de116, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622978874382910945, guid: f693a453c2e7ced48be81618191de116, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1822931629}
     - target: {fileID: 3622978874382910945, guid: f693a453c2e7ced48be81618191de116, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1457447736}
+    - target: {fileID: 3622978874382910945, guid: f693a453c2e7ced48be81618191de116, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622978874382910945, guid: f693a453c2e7ced48be81618191de116, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622978874382910945, guid: f693a453c2e7ced48be81618191de116, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: OnBlockerClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622978874382910945, guid: f693a453c2e7ced48be81618191de116, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: BlockerPanelUtil, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622978874382910945, guid: f693a453c2e7ced48be81618191de116, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3692416546648791438, guid: f693a453c2e7ced48be81618191de116, type: 3}
       propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.size
@@ -8642,10 +8694,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6218884269199873432, guid: f693a453c2e7ced48be81618191de116, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6218884269199873432, guid: f693a453c2e7ced48be81618191de116, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6218884269199873432, guid: f693a453c2e7ced48be81618191de116, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6218884269199873432, guid: f693a453c2e7ced48be81618191de116, type: 3}
@@ -8655,9 +8711,17 @@ PrefabInstance:
     - target: {fileID: 6218884269199873432, guid: f693a453c2e7ced48be81618191de116, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
+      objectReference: {fileID: 1457447736}
+    - target: {fileID: 6218884269199873432, guid: f693a453c2e7ced48be81618191de116, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
       objectReference: {fileID: 1279035767}
     - target: {fileID: 6218884269199873432, guid: f693a453c2e7ced48be81618191de116, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6218884269199873432, guid: f693a453c2e7ced48be81618191de116, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6218884269199873432, guid: f693a453c2e7ced48be81618191de116, type: 3}
@@ -8666,14 +8730,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6218884269199873432, guid: f693a453c2e7ced48be81618191de116, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: OnBlockerClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 6218884269199873432, guid: f693a453c2e7ced48be81618191de116, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
       value: SaveData
       objectReference: {fileID: 0}
     - target: {fileID: 6218884269199873432, guid: f693a453c2e7ced48be81618191de116, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: BlockerPanelUtil, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6218884269199873432, guid: f693a453c2e7ced48be81618191de116, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
       value: PlayerSettings, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6218884269199873432, guid: f693a453c2e7ced48be81618191de116, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6218884269199873432, guid: f693a453c2e7ced48be81618191de116, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6318027108598659368, guid: f693a453c2e7ced48be81618191de116, type: 3}
@@ -8891,7 +8967,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7785611510918025379, guid: f693a453c2e7ced48be81618191de116, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1457447736}
   m_SourcePrefab: {fileID: 100100000, guid: f693a453c2e7ced48be81618191de116, type: 3}
 --- !u!224 &1457447734 stripped
 RectTransform:
@@ -8903,6 +8982,27 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7785611510918025379, guid: f693a453c2e7ced48be81618191de116, type: 3}
   m_PrefabInstance: {fileID: 1457447733}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1457447736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457447735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eeb66bd8d8f8cc458fb5ae6341d1939, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ColliderSprites:
+  - {fileID: 686666648}
+  - {fileID: 556773110}
+  - {fileID: 1414079990}
+  - {fileID: 697839313}
+  - {fileID: 1973389961}
+  - {fileID: 1271384731}
+  - {fileID: 892932790}
+  BlockerPanel: {fileID: 1457447735}
 --- !u!1 &1515656476
 GameObject:
   m_ObjectHideFlags: 0
@@ -9346,7 +9446,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1627743881}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2120158587}
+        m_TargetAssemblyTypeName: BlockerPanelUtil, Assembly-CSharp
+        m_MethodName: OnBlockerClose
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1627743881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10077,7 +10189,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5046620263449835911, guid: 35e52c6140fb338458e596553d9a9185, type: 3}
       insertIndex: -1
       addedObject: {fileID: 503737979}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1552013472642057381, guid: 35e52c6140fb338458e596553d9a9185, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1667692986}
   m_SourcePrefab: {fileID: 100100000, guid: 35e52c6140fb338458e596553d9a9185, type: 3}
 --- !u!224 &1667692980 stripped
 RectTransform:
@@ -10099,6 +10214,27 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1552013472642057381, guid: 35e52c6140fb338458e596553d9a9185, type: 3}
   m_PrefabInstance: {fileID: 1667692979}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1667692986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667692983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eeb66bd8d8f8cc458fb5ae6341d1939, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ColliderSprites:
+  - {fileID: 686666648}
+  - {fileID: 556773110}
+  - {fileID: 1414079990}
+  - {fileID: 697839313}
+  - {fileID: 1973389961}
+  - {fileID: 1271384731}
+  - {fileID: 892932790}
+  BlockerPanel: {fileID: 1667692983}
 --- !u!1 &1711232649
 GameObject:
   m_ObjectHideFlags: 0
@@ -11108,6 +11244,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2120158586}
+  - component: {fileID: 2120158587}
   m_Layer: 0
   m_Name: Dialog Descision Template
   m_TagString: Untagged
@@ -11133,6 +11270,27 @@ Transform:
   - {fileID: 1515656477}
   m_Father: {fileID: 1634486016}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2120158587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120158585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eeb66bd8d8f8cc458fb5ae6341d1939, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ColliderSprites:
+  - {fileID: 686666648}
+  - {fileID: 556773110}
+  - {fileID: 1414079990}
+  - {fileID: 697839313}
+  - {fileID: 1973389961}
+  - {fileID: 1271384731}
+  - {fileID: 892932790}
+  BlockerPanel: {fileID: 2120158585}
 --- !u!1 &2131827762
 GameObject:
   m_ObjectHideFlags: 0

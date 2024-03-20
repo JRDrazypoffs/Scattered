@@ -3881,6 +3881,7 @@ GameObject:
   - component: {fileID: 385290812}
   - component: {fileID: 385290813}
   - component: {fileID: 385290807}
+  - component: {fileID: 385290814}
   m_Layer: 0
   m_Name: Records
   m_TagString: Untagged
@@ -4044,6 +4045,25 @@ PolygonCollider2D:
       - {x: -0.015, y: -0.37}
       - {x: 0.16499999, y: -0.45999998}
   m_UseDelaunayMesh: 0
+--- !u!114 &385290814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385290805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d838a0aaf75ecd499205097080b7ea9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockerPanel:
+  - {fileID: 1228135389}
+  - {fileID: 153091341}
+  - {fileID: 302851095}
+  - {fileID: 1311478170}
+  - {fileID: 944886283}
+  ColliderSprite: {fileID: 385290805}
 --- !u!1 &393354696
 GameObject:
   m_ObjectHideFlags: 0
@@ -4936,6 +4956,7 @@ GameObject:
   - component: {fileID: 506981087}
   - component: {fileID: 506981088}
   - component: {fileID: 506981082}
+  - component: {fileID: 506981089}
   m_Layer: 0
   m_Name: Candlestick
   m_TagString: Untagged
@@ -5090,6 +5111,25 @@ PolygonCollider2D:
       - {x: 0.089999996, y: -0.25}
       - {x: 0.049999997, y: 0.12}
   m_UseDelaunayMesh: 0
+--- !u!114 &506981089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506981080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d838a0aaf75ecd499205097080b7ea9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockerPanel:
+  - {fileID: 1228135389}
+  - {fileID: 153091341}
+  - {fileID: 302851095}
+  - {fileID: 1311478170}
+  - {fileID: 944886283}
+  ColliderSprite: {fileID: 506981080}
 --- !u!1 &509756009
 GameObject:
   m_ObjectHideFlags: 0
@@ -6335,6 +6375,7 @@ GameObject:
   - component: {fileID: 641779029}
   - component: {fileID: 641779030}
   - component: {fileID: 641779024}
+  - component: {fileID: 641779031}
   m_Layer: 0
   m_Name: Typewriter
   m_TagString: Untagged
@@ -6498,6 +6539,25 @@ PolygonCollider2D:
       - {x: 0.62, y: -0.285}
       - {x: 0.62, y: -0.205}
   m_UseDelaunayMesh: 0
+--- !u!114 &641779031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641779022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d838a0aaf75ecd499205097080b7ea9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockerPanel:
+  - {fileID: 1228135389}
+  - {fileID: 153091341}
+  - {fileID: 302851095}
+  - {fileID: 1311478170}
+  - {fileID: 944886283}
+  ColliderSprite: {fileID: 641779022}
 --- !u!1 &644663098
 GameObject:
   m_ObjectHideFlags: 0
@@ -8649,6 +8709,7 @@ GameObject:
   - component: {fileID: 916800835}
   - component: {fileID: 916800836}
   - component: {fileID: 916800830}
+  - component: {fileID: 916800837}
   m_Layer: 0
   m_Name: Violin
   m_TagString: Untagged
@@ -8815,6 +8876,25 @@ PolygonCollider2D:
       - {x: 0.675, y: -0.56}
       - {x: 0.675, y: -0.24}
   m_UseDelaunayMesh: 0
+--- !u!114 &916800837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916800828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d838a0aaf75ecd499205097080b7ea9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockerPanel:
+  - {fileID: 1228135389}
+  - {fileID: 153091341}
+  - {fileID: 302851095}
+  - {fileID: 1311478170}
+  - {fileID: 944886283}
+  ColliderSprite: {fileID: 916800828}
 --- !u!1 &929103095
 GameObject:
   m_ObjectHideFlags: 0
@@ -13866,6 +13946,7 @@ GameObject:
   - component: {fileID: 1550165479}
   - component: {fileID: 1550165480}
   - component: {fileID: 1550165474}
+  - component: {fileID: 1550165481}
   m_Layer: 0
   m_Name: Music Box
   m_TagString: Untagged
@@ -14028,6 +14109,25 @@ PolygonCollider2D:
       - {x: 0.59, y: -0.26}
       - {x: 0.59, y: -0.19}
   m_UseDelaunayMesh: 0
+--- !u!114 &1550165481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550165472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d838a0aaf75ecd499205097080b7ea9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockerPanel:
+  - {fileID: 1228135389}
+  - {fileID: 153091341}
+  - {fileID: 302851095}
+  - {fileID: 1311478170}
+  - {fileID: 944886283}
+  ColliderSprite: {fileID: 1550165472}
 --- !u!1 &1570415616
 GameObject:
   m_ObjectHideFlags: 0
@@ -14313,6 +14413,7 @@ GameObject:
   - component: {fileID: 1623146503}
   - component: {fileID: 1623146504}
   - component: {fileID: 1623146498}
+  - component: {fileID: 1623146505}
   m_Layer: 0
   m_Name: Old Camera
   m_TagString: Untagged
@@ -14500,6 +14601,25 @@ PolygonCollider2D:
       - {x: 0.175, y: -0.035}
       - {x: 0.044999998, y: -0.035}
   m_UseDelaunayMesh: 0
+--- !u!114 &1623146505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623146496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d838a0aaf75ecd499205097080b7ea9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockerPanel:
+  - {fileID: 1228135389}
+  - {fileID: 153091341}
+  - {fileID: 302851095}
+  - {fileID: 1311478170}
+  - {fileID: 944886283}
+  ColliderSprite: {fileID: 1623146496}
 --- !u!114 &1640048276 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3692416546648791438, guid: f693a453c2e7ced48be81618191de116, type: 3}
@@ -14601,6 +14721,7 @@ GameObject:
   - component: {fileID: 1658430488}
   - component: {fileID: 1658430491}
   - component: {fileID: 1658430490}
+  - component: {fileID: 1658430492}
   m_Layer: 5
   m_Name: Magnifying Glass
   m_TagString: Untagged
@@ -19582,6 +19703,25 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &1658430492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658430485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d838a0aaf75ecd499205097080b7ea9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockerPanel:
+  - {fileID: 1228135389}
+  - {fileID: 153091341}
+  - {fileID: 302851095}
+  - {fileID: 1311478170}
+  - {fileID: 944886283}
+  ColliderSprite: {fileID: 1658430485}
 --- !u!1 &1673955345
 GameObject:
   m_ObjectHideFlags: 0
@@ -21003,6 +21143,7 @@ GameObject:
   - component: {fileID: 1745388525}
   - component: {fileID: 1745388526}
   - component: {fileID: 1745388520}
+  - component: {fileID: 1745388527}
   m_Layer: 0
   m_Name: Gramophone
   m_TagString: Untagged
@@ -21173,6 +21314,25 @@ PolygonCollider2D:
       - {x: 0.205, y: -0.39}
       - {x: 0.145, y: -0.22}
   m_UseDelaunayMesh: 0
+--- !u!114 &1745388527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745388518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d838a0aaf75ecd499205097080b7ea9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockerPanel:
+  - {fileID: 1228135389}
+  - {fileID: 153091341}
+  - {fileID: 302851095}
+  - {fileID: 1311478170}
+  - {fileID: 944886283}
+  ColliderSprite: {fileID: 1745388518}
 --- !u!1 &1766898983
 GameObject:
   m_ObjectHideFlags: 0
@@ -27388,6 +27548,7 @@ GameObject:
   - component: {fileID: 1863059587}
   - component: {fileID: 1863059588}
   - component: {fileID: 1863059582}
+  - component: {fileID: 1863059589}
   m_Layer: 0
   m_Name: Coffee Grinder
   m_TagString: Untagged
@@ -27556,6 +27717,25 @@ PolygonCollider2D:
       - {x: 0.575, y: -0.465}
       - {x: 0.575, y: -0.315}
   m_UseDelaunayMesh: 0
+--- !u!114 &1863059589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863059580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d838a0aaf75ecd499205097080b7ea9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockerPanel:
+  - {fileID: 1228135389}
+  - {fileID: 153091341}
+  - {fileID: 302851095}
+  - {fileID: 1311478170}
+  - {fileID: 944886283}
+  ColliderSprite: {fileID: 1863059580}
 --- !u!1 &1874855206
 GameObject:
   m_ObjectHideFlags: 0
@@ -27896,6 +28076,7 @@ GameObject:
   - component: {fileID: 1915581162}
   - component: {fileID: 1915581163}
   - component: {fileID: 1915581157}
+  - component: {fileID: 1915581164}
   m_Layer: 0
   m_Name: Mannequin
   m_TagString: Untagged
@@ -28129,6 +28310,25 @@ PolygonCollider2D:
       - {x: -0.175, y: -0.53999996}
       - {x: -0.185, y: -0.55}
   m_UseDelaunayMesh: 0
+--- !u!114 &1915581164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915581155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d838a0aaf75ecd499205097080b7ea9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockerPanel:
+  - {fileID: 1228135389}
+  - {fileID: 153091341}
+  - {fileID: 302851095}
+  - {fileID: 1311478170}
+  - {fileID: 944886283}
+  ColliderSprite: {fileID: 1915581155}
 --- !u!1 &1917107661
 GameObject:
   m_ObjectHideFlags: 0
@@ -29084,6 +29284,7 @@ GameObject:
   - component: {fileID: 2091869589}
   - component: {fileID: 2091869590}
   - component: {fileID: 2091869584}
+  - component: {fileID: 2091869591}
   m_Layer: 0
   m_Name: Ocean Painting
   m_TagString: Untagged
@@ -29247,6 +29448,25 @@ PolygonCollider2D:
       - {x: 1.14, y: 0.28}
       - {x: 1.13, y: 0.29999998}
   m_UseDelaunayMesh: 0
+--- !u!114 &2091869591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091869582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d838a0aaf75ecd499205097080b7ea9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockerPanel:
+  - {fileID: 1228135389}
+  - {fileID: 153091341}
+  - {fileID: 302851095}
+  - {fileID: 1311478170}
+  - {fileID: 944886283}
+  ColliderSprite: {fileID: 2091869582}
 --- !u!1 &2097198008
 GameObject:
   m_ObjectHideFlags: 0
