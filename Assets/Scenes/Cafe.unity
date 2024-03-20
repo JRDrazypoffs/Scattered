@@ -1530,7 +1530,7 @@ GameObject:
   - component: {fileID: 175025907}
   - component: {fileID: 175025906}
   - component: {fileID: 175025905}
-  - component: {fileID: 175025904}
+  - component: {fileID: 175025908}
   m_Layer: 5
   m_Name: Times Up Content
   m_TagString: Untagged
@@ -1561,23 +1561,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.00012207031, y: 0.000061035156}
   m_SizeDelta: {x: -100.00006, y: -100.00003}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &175025904
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 175025902}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00363f9faae695145a4f456c453397a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BubbleItem: {fileID: 995399552}
-  PanelItem: {fileID: 175025902}
-  OtherPanelItem: {fileID: 0}
-  popAnimator: {fileID: 995399554}
-  PopSound: {fileID: 362401973}
 --- !u!114 &175025905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1631,6 +1614,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 175025902}
   m_CullTransparentMesh: 1
+--- !u!114 &175025908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175025902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da96c3992f87417469ebe15cf75150ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BubbleItem: {fileID: 995399552}
+  PanelItem: {fileID: 302851095}
+  popAnimator: {fileID: 995399554}
+  PopSound: {fileID: 362401973}
 --- !u!1 &194123783
 GameObject:
   m_ObjectHideFlags: 0

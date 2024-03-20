@@ -6384,7 +6384,7 @@ MonoBehaviour:
   m_text: 'A <color=#F0C75E><b>Small Statue</b></color>!
 
     Bring this to the <color=#509D69><b>Museum</b></color>
-    and speak with a <color=#60B2D7><b>Historian</b></color>!'
+    and speak with an <color=#60B2D7><b>Archaelogist</b></color>!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

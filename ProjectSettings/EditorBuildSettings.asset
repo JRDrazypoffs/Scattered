@@ -17,6 +17,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cafe.unity
     guid: 765a12f96e292fe45980d4876203aa4d
+  - enabled: 1
+    path: Assets/Scenes/Museum.unity
+    guid: 860a9b45d65732f4793a5da934eca8cb
+  - enabled: 1
+    path: Assets/Scenes/Library.unity
+    guid: 8aa5b6085f1cf0e4bbdbbc69ea746d7c
+  - enabled: 1
+    path: Assets/Scenes/Central Park.unity
+    guid: 5ec15d815626c234b848e813d0239b07
+  - enabled: 1
+    path: Assets/Scenes/Beach.unity
+    guid: b3c8f4905ed83f347b04115ae202588c
+  - enabled: 1
+    path: Assets/Scenes/Campsite.unity
+    guid: a0117287d23c4b548b8589bf1c988bbc
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 5ba588510aaa8184d8b77a768bca05dc, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: aac1b08a239ee684089282fb6cef076e, type: 2}
