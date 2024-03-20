@@ -8,7 +8,7 @@ public class TooltipsDisabler : MonoBehaviour
     
     public Button[] HOListLabelBtns;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         int DifficultyLevel = PlayerPrefs.GetInt("Player Pref Difficulty");
         if(DifficultyLevel == 1||DifficultyLevel == 2){
