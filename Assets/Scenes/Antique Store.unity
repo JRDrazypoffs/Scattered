@@ -2690,10 +2690,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This item plays music by spinning a cylinder, also called a drum, with
-    bumps that flicks tines on a metal comb to play sounds. It is on a cabinet beside
-    the grandfather clock. The shopkeeper said that we should look for the missing
-    cylinder!
+  m_text: This item plays music by spinning a cylinder with bumps that flicks tines
+    on a metal comb to play sounds. <color=#F0C75E><b>It is on a cabinet beside the
+    grandfather clock</b></color>. The shopkeeper said that we should look for the
+    <color=#60B2D7><b>Missing Cylinder</b></color> as we progress in more areas.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2730,7 +2730,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
-  m_characterSpacing: 5
+  m_characterSpacing: 1
   m_wordSpacing: 0
   m_lineSpacing: 20
   m_lineSpacingMax: 0
@@ -5231,7 +5231,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This is a very old camera! It is placed near a high wheel bicycle.
+  m_text: This is a very old camera! <color=#F0C75E><b>It is placed near a high wheel
+    bicycle.</b></color>
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5268,7 +5269,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
-  m_characterSpacing: 5
+  m_characterSpacing: 1
   m_wordSpacing: 0
   m_lineSpacing: 20
   m_lineSpacingMax: 0
@@ -8168,8 +8169,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: I bet my wife would love this. It makes beautiful sounds. It lays upon
-    an open briefcase.
+  m_text: I bet my wife would love this. It makes beautiful sounds. <color=#F0C75E><b>It
+    lays inside an open briefcase.</b></color>
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8206,7 +8207,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
-  m_characterSpacing: 5
+  m_characterSpacing: 1
   m_wordSpacing: 0
   m_lineSpacing: 20
   m_lineSpacingMax: 0
@@ -9854,7 +9855,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: Seamstresses and tailors use this to make clothes. You see this in clothing
-    shops too! It is placed on some briefcases.
+    shops too! <color=#F0C75E><b>It is placed on some briefcases</b></color>.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9891,7 +9892,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
-  m_characterSpacing: 5
+  m_characterSpacing: 1
   m_wordSpacing: 0
   m_lineSpacing: 20
   m_lineSpacingMax: 0
@@ -13828,8 +13829,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This item is hard to miss, its hanging on the wall right above the grand
-    piano and a high wheel bike!
+  m_text: This item is hard to miss, <color=#F0C75E><b>it's hanging on the wall right
+    above the grand piano and a high wheel bike</b></color>!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -13866,7 +13867,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
-  m_characterSpacing: 5
+  m_characterSpacing: 1
   m_wordSpacing: 0
   m_lineSpacing: 20
   m_lineSpacingMax: 0
@@ -13963,8 +13964,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This is what people use to listen to music in the olden days. It is placed
-    opposite the shelf that is leaning against the brick wall.
+  m_text: This is what people used to use to listen to music back in the days. <color=#F0C75E><b>It
+    is placed opposite the shelf that is leaning against the brick wall</b></color>.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -14001,7 +14002,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
-  m_characterSpacing: 5
+  m_characterSpacing: 1
   m_wordSpacing: 0
   m_lineSpacing: 20
   m_lineSpacingMax: 0
@@ -14332,9 +14333,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This item is brown and sitting on the old television. It is use to crush
-    and grind up roasted coffee beans! Pick it up quickly, we need to bring this
-    to the cafe next door!
+  m_text: <color=#F0C75E><b>This item is brown and sitting on the old television.</b></color>
+    It is used to crush roasted coffee beans to fine grounds! Pick it up quickly,
+    we need to bring this to the <color=#60B2D7><b>Cafe Owner</b></color> next door!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -14371,7 +14372,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
-  m_characterSpacing: 5
+  m_characterSpacing: 1
   m_wordSpacing: 0
   m_lineSpacing: 20
   m_lineSpacingMax: 0
@@ -15110,7 +15111,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: Before we had computers, we had typewriters! They type letters on paper
-    like a printer. It is placed beside a retro CRT sceen computer.
+    like a printer. <color=#F0C75E><b>It is placed beside a retro CRT sceen computer.</b></color>
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -15147,7 +15148,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
-  m_characterSpacing: 5
+  m_characterSpacing: 1
   m_wordSpacing: 0
   m_lineSpacing: 20
   m_lineSpacingMax: 0
@@ -33278,8 +33279,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: We need a record player to play these discs, oh there was a gramophone
-    here! It is on the sofa by the way, leaning on a striped yellow cushion.
+  m_text: We need a record player to play these vinyl discs, oh there was a gramophone
+    here! <color=#F0C75E><b>It is on the sofa by the way, leaning on a striped yellow
+    cushion.</b></color>
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -33316,7 +33318,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
-  m_characterSpacing: 5
+  m_characterSpacing: 1
   m_wordSpacing: 0
   m_lineSpacing: 20
   m_lineSpacingMax: 0
@@ -36881,8 +36883,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This item is located on a shelf by the brick wall. Oh what a mysterious
-    creature by the window. I wonder what could it be?
+  m_text: <color=#F0C75E><b>This item is located on a shelf by the brick wall.</b></color>
+    Oh there is a <color=#60B2D7><b>Mysterious Creature</b></color> by the window.
+    I wonder what could it be?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -36919,7 +36922,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
-  m_characterSpacing: 5
+  m_characterSpacing: 1
   m_wordSpacing: 0
   m_lineSpacing: 20
   m_lineSpacingMax: 0
