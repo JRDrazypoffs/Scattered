@@ -8,18 +8,16 @@ public class SelectArea : MonoBehaviour
 {
     public Button[] buttons;
     // public GameObject[] Area;
+    public static int currentLevel;
+    public static int unlockedLevels;
 
     private void Awake(){
-        int UnlockedLevel = PlayerPrefs.GetInt("Unlocked Area",1);
+        unlockedLevels = PlayerPrefs.GetInt("Unlocked Levels",0);
 
         for(int i = 0; i < buttons.Length; i++){
-            buttons[i].interactable = false;
-            // Area[i].GetComponent<Collider2D>().isTrigger = false;
-        }
-
-        for(int i = 0; i < UnlockedLevel; i++){
-            buttons[i].interactable = true;
-            // Area[i].GetComponent<Collider2D>().isTrigger = true;
+            if(unlockedLevels >= i){
+                buttons[i].interactable = true;
+            }
         }
     }
 

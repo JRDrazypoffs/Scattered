@@ -32,7 +32,7 @@ public class AllFound : MonoBehaviour
             if (HiddenObjectList[i] == null){
                 HiddenObjectList.RemoveAt(i);
             }
- 
+
             if (HiddenObjectList.Count == 0){
                 print("Area Cleared");
                 Destroy(HintBtn);
@@ -46,13 +46,13 @@ public class AllFound : MonoBehaviour
         }
     }
 
-    public void UnlockNewArea(){
-        if(SceneManager.GetActiveScene().buildIndex <= PlayerPrefs.GetInt("ReachedIndex")){
-            PlayerPrefs.SetInt("ReachedIndex", SceneManager.GetActiveScene().buildIndex + 1 );
-            PlayerPrefs.SetInt("UnlockedArea", PlayerPrefs.GetInt("UnlockedArea", 1) + 1 );
+    void UnlockNewArea(){
+        if(SelectArea.currentLevel == SelectArea.unlockedLevels){
+            SelectArea.unlockedLevels++;
+            PlayerPrefs.SetInt("Unlocked Levels", SelectArea.unlockedLevels);
             PlayerPrefs.Save();
+            Debug.Log("New Area should be Unlocked");
         }
-        print("New Area Unlocked");
     }
 }
 
