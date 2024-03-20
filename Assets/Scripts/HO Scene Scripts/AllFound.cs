@@ -49,9 +49,10 @@ public class AllFound : MonoBehaviour
     void UnlockNewArea(){
         if(SelectArea.currentLevel == SelectArea.unlockedLevels){
             SelectArea.unlockedLevels++;
+            SelectArea.currentLevel++;
+            PlayerPrefs.SetInt("Current Level", SelectArea.currentLevel);
             PlayerPrefs.SetInt("Unlocked Levels", SelectArea.unlockedLevels);
             PlayerPrefs.Save();
-            Debug.Log("New Area should be Unlocked");
         }
     }
 }
