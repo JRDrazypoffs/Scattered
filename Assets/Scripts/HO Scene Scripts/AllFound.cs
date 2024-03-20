@@ -41,7 +41,7 @@ public class AllFound : MonoBehaviour
                 LevelCompleteSound.Play();
                 UnlockNewArea();
                 LevelCompletePanel.SetActive(true);
-                SuccessMessage.text = "<b>Congratulations</b> <color=#F0C75E><b>"+ Username + "</b></color>, \nyou have <color=#509D69><b>completed</b></color> this level!";
+                SuccessMessage.text = "<b>Congratulations</b> <color=#60B2D7><b>"+ Username + "</b></color>! \nYou have <color=green><b>completed</b></color> this level!";
             }
         }
     }

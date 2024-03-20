@@ -1206,7 +1206,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 350, y: -53.17}
+  m_AnchoredPosition: {x: 350, y: -42.5205}
   m_SizeDelta: {x: 700, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &133793193
@@ -1268,7 +1268,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 10
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -2936,7 +2936,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 350, y: -53.17}
+  m_AnchoredPosition: {x: 350, y: -42.5205}
   m_SizeDelta: {x: 700, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &322097092
@@ -2961,8 +2961,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "You have found a <color=#F0C75E><b>Mysterious Music Box</b></color>!\nBut
     the <color=#F0C75E><b>Cylinder Mechanism</b></color> is <color=red><b>missing</b></color>!
-    Your task is to look for it. \nBut don't forget to also keep an eye out for Todd's
-    missing son!"
+    Your task is to look for it. \nBut don't forget to also keep an eye out for <color=#60B2D7><b>Todd's
+    missing son</b></color>!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3001,7 +3001,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 10
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -5900,8 +5900,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000050867, y: -53.171}
-  m_SizeDelta: {x: 700, y: 106.34}
+  m_AnchoredPosition: {x: 0.0000050867, y: -63.821}
+  m_SizeDelta: {x: 700, y: 85.041}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &566327857
 MonoBehaviour:
@@ -14374,8 +14374,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000050867, y: -53.171}
-  m_SizeDelta: {x: 700, y: 106.34}
+  m_AnchoredPosition: {x: 0.0000050867, y: -63.821}
+  m_SizeDelta: {x: 700, y: 85.041}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1598436394
 MonoBehaviour:
@@ -19849,8 +19849,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000050867, y: -53.171}
-  m_SizeDelta: {x: 700, y: 106.34}
+  m_AnchoredPosition: {x: 0.0000050867, y: -63.821}
+  m_SizeDelta: {x: 700, y: 85.041}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1674505850
 MonoBehaviour:
@@ -26471,7 +26471,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 350, y: -53.17}
+  m_AnchoredPosition: {x: 350, y: -42.5205}
   m_SizeDelta: {x: 700, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1795255603
@@ -26536,7 +26536,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 10
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0

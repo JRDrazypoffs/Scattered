@@ -4028,8 +4028,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1168385866}
-  - {fileID: 1734011874}
   - {fileID: 1145780198}
+  - {fileID: 1734011874}
   m_Father: {fileID: 525880836}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -6787,8 +6787,8 @@ MonoBehaviour:
   m_text: 'A <color=#F0C75E><b>Music Box Cylinder</b></color>!
 
     I''m glad we
-    have <color=green><b>found</b></color> <color=#60B2D7><b>Kitt</b></color> and
-    <color=#60B2D7><b>Kitt</b></color> had <color=green><b>found</b></color> <color=#F0C75E><b>this</b></color>.
+    have <color=green><b>found</b></color> <color=#60B2D7><b>Kitt</b></color>. Interestingly,
+    <color=#60B2D7><b>Kitt</b></color> had <color=green><b>found</b></color> <color=#F0C75E><b>this</b></color>!
     I wonder what it does?
 
     Let''s place it in the <color=#F0C75E><b>Music Box</b></color>
@@ -12442,8 +12442,8 @@ MonoBehaviour:
   m_text: 'A <color=#F0C75E><b>Digital Camera</b></color>!
 
     I feel like we could
-    take a break. Let''s cool off at the <color=#509D69><b>Beach</b></color> and
-    take some photos of the scenery.'
+    use a short break. Let''s cool off at the <color=#509D69><b>Beach</b></color>
+    and take some photos of the scenery.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
