@@ -48,11 +48,15 @@ public class TimeControl : MonoBehaviour
         if(RemainingTime < 11){
             TimerText.color = Color.red;
                 // use this silly method to stop the system from playing the sfx in infinite loop until triggered
-                if(SoundTrigger == 10000){
+                if(SoundTrigger == 1000000){
                     SoundTrigger = 0;
                 }else{
                     SoundTrigger++;
                 }
+        }
+
+        if(TimesUpPanel.activeSelf==true){
+            TickingSound.Stop();
         }
 
         if(SoundTrigger==1){
@@ -63,6 +67,10 @@ public class TimeControl : MonoBehaviour
         int Seconds = Mathf.FloorToInt(RemainingTime % 60);
         // TimerText.text = RemainingTime.ToString();
         TimerText.text = string.Format("{0:00}:{1:00}",Minutes,Seconds);
+    }
+
+    public void ResetCounterBuffer(){
+        SoundTrigger = 0;
     }
 
     public void RestartTheGame(){
