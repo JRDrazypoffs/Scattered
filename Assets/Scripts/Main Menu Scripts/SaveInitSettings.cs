@@ -30,6 +30,7 @@ public class SaveInitSettings : MonoBehaviour
         PlayerPrefs.SetString("Player Pref Username",UsernameInput.text);
         PlayerPrefs.SetInt("Player Pref Difficulty",difficultyDropdown.value);
         PlayerPrefs.SetInt("Player Pref Resolution Index",TempResolutionIndex);
+        PlayerPrefs.SetInt("Player Pref IsFullscreen",1);
         PlayerPrefs.SetInt("Settings Has Set",1);
         PlayerPrefs.Save();
     }
