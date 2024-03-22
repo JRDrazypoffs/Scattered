@@ -23,6 +23,11 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadSceneAsync("Map");
     }
 
+    public void StartNewGame(){
+        PlayerPrefs.DeleteAll();
+        SceneManager.LoadSceneAsync("Start New Game Menu");
+    }
+
     public void LoadMainMenu(){
         SceneManager.LoadSceneAsync("Main Menu");
     }
