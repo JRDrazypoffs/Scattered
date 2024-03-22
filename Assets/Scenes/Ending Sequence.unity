@@ -2258,7 +2258,7 @@ MonoBehaviour:
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 700, y: 70}
-  m_Spacing: {x: 0, y: 0}
+  m_Spacing: {x: 0, y: 20}
   m_Constraint: 0
   m_ConstraintCount: 2
 --- !u!1 &1083423199
@@ -3452,7 +3452,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 350, y: -140}
+  m_AnchoredPosition: {x: 350, y: -130}
   m_SizeDelta: {x: 700, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1364487031
@@ -5735,7 +5735,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 350, y: -210}
+  m_AnchoredPosition: {x: 350, y: -220}
   m_SizeDelta: {x: 700, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2144159609
@@ -5758,8 +5758,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You have successfully reunited <color=#60B2D7><b>Todd</b></color> with
-    his son, <color=#60B2D7><b>Kitt</b></color>!
+  m_text: '<color=white><b>Congratulations!</b></color>
+
+    You have successfully
+    reunited <color=#60B2D7><b>Todd</b></color> with his son, <color=#60B2D7><b>Kitt</b></color>!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5786,8 +5788,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16
-  m_fontSizeBase: 16
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
