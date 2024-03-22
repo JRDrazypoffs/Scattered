@@ -12,6 +12,10 @@ public class SaveInitSettings : MonoBehaviour
     [SerializeField] TMP_InputField UsernameInput;
     public TMP_Dropdown difficultyDropdown;
     private int TempResolutionIndex;
+
+    public GameObject EasyPanel;
+    public GameObject ModeratePanel;
+    public GameObject DifficultPanel;
     
     void Start(){
         resolutions = Screen.resolutions;
@@ -22,6 +26,22 @@ public class SaveInitSettings : MonoBehaviour
             resolutions[i].height == Screen.currentResolution.height){
                 TempResolutionIndex = i;
             }
+        }
+    }
+
+    void Update(){
+        if(difficultyDropdown.value==0){
+            EasyPanel.SetActive(true);
+            ModeratePanel.SetActive(false);
+            DifficultPanel.SetActive(false);
+        }else if(difficultyDropdown.value==1){
+            EasyPanel.SetActive(false);
+            ModeratePanel.SetActive(true);
+            DifficultPanel.SetActive(false);
+        }else{
+            EasyPanel.SetActive(false);
+            ModeratePanel.SetActive(false);
+            DifficultPanel.SetActive(true);
         }
     }
 
