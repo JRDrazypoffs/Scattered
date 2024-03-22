@@ -17,6 +17,7 @@ public class CheckSave : MonoBehaviour
 
     // Start is called before the first frame update
     void Start(){
+        SoundTrigger=0;
         SettingsHasSet = PlayerPrefs.HasKey("Settings Has Set");
 
         if(SettingsHasSet==true){
