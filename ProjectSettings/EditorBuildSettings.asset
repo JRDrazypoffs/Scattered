@@ -38,6 +38,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ending Sequence.unity
     guid: b596245dbcecd8b45ba239235c942ebd
+  - enabled: 1
+    path: Assets/Scenes/Music Box.unity
+    guid: 170ffce4b6ccf5e4987326bdb61feafb
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 5ba588510aaa8184d8b77a768bca05dc, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: aac1b08a239ee684089282fb6cef076e, type: 2}

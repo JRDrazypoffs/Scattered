@@ -23,6 +23,6 @@ public class GotoEndScene : MonoBehaviour
     }
 
     public void TriggerEndSequence(){
-        SceneManager.LoadSceneAsync("Ending Sequence");
+        SceneManager.LoadSceneAsync("Music Box");
     }
 }
