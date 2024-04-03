@@ -5,30 +5,38 @@ using UnityEngine.UI;
 using TMPro;
 using System;
 
-public class DialogAnimator : MonoBehaviour
+public class DialogAnimatorTooltips : MonoBehaviour
 {
-    // [SerializeField] TMP_Text[] DialoguesText;
     public GameObject[] Dialogues;
     private static string Sentence;
+    // private string[] SentenceBuffer;
     private static int index;
     
     // Start is called before the first frame update
     void Start()
     {
-        Sentence = Dialogues[index].GetComponent<TMP_Text>().text;
-        StopAllCoroutines();
-        StartCoroutine(TypeSentence(Sentence, index));
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        for(int i = 0; i<Dialogues.Length; i++){
+        
+    }
+
+    public void AnimateTooltipsText(){
+        for(int i = 0; i < Dialogues.Length; i++){
             if(Dialogues[i].activeSelf==true){
                 index = i;
             }
         }
-        
+        Sentence = Dialogues[index].GetComponent<TMP_Text>().text;
+        StartCoroutine(TypeSentence(Sentence, index));
+    }
+
+    public void StopAnimation(){
+        // this function will stop the animationof other elements
+        StopAllCoroutines();
     }
 
     IEnumerator TypeSentence (String sentence, int index){
