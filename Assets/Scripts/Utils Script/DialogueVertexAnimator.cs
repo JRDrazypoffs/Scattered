@@ -4,9 +4,15 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+// Video Tutorial
+// https://www.youtube.com/watch?v=So8DpNh3XOE
+// Important Classes/Functions:
+// DialogueManager.cs Line 45 PlayDialogue Starts the text animation
+// DialogueUtility.cs Line 28 ProcessInputString Parses the text and pulls out any special tags/commands
+// DialogueVertexAnimator.cs Line 23 AnimateTextIn Takes the processed text and dialogue commands and performs the text vertex animation
 public class DialogueVertexAnimator {
     public bool textAnimating = false;
-    private bool stopAnimating = false;
+    public bool stopAnimating = false;
 
     private readonly TMP_Text textBox;
     private readonly float textAnimationScale;
@@ -175,8 +181,8 @@ public class DialogueVertexAnimator {
         }
     }
 
-    private float timeUntilNextDialogueSound = 0;
-    private float lastDialogueSound = 0;
+    // private float timeUntilNextDialogueSound = 0;
+    // private float lastDialogueSound = 0;
     // private void PlayDialogueSound(AudioClip voice_sound) {
     //     if (Time.unscaledTime - lastDialogueSound > timeUntilNextDialogueSound) {
     //         timeUntilNextDialogueSound = UnityEngine.Random.Range(0.02f, 0.08f);

@@ -3,6 +3,12 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+// Video Tutorial
+// https://www.youtube.com/watch?v=So8DpNh3XOE
+// Important Classes/Functions:
+// DialogueManager.cs Line 45 PlayDialogue Starts the text animation
+// DialogueUtility.cs Line 28 ProcessInputString Parses the text and pulls out any special tags/commands
+// DialogueVertexAnimator.cs Line 23 AnimateTextIn Takes the processed text and dialogue commands and performs the text vertex animation
 public class DialogueManager : MonoBehaviour
 {
     public TMP_Text textBox;
