@@ -1144,6 +1144,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 818106038}
+        m_TargetAssemblyTypeName: DialogAnimatorTooltips, Assembly-CSharp
+        m_MethodName: AnimateTooltipsText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &132522483
 GameObject:
   m_ObjectHideFlags: 0
@@ -3091,6 +3103,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 818106038}
+        m_TargetAssemblyTypeName: DialogAnimatorTooltips, Assembly-CSharp
+        m_MethodName: AnimateTooltipsText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &339848630
 GameObject:
   m_ObjectHideFlags: 0
@@ -4270,6 +4294,18 @@ MonoBehaviour:
       - m_Target: {fileID: 536257017}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 818106038}
+        m_TargetAssemblyTypeName: DialogAnimatorTooltips, Assembly-CSharp
+        m_MethodName: AnimateTooltipsText
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7013,6 +7049,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 818106038}
+        m_TargetAssemblyTypeName: DialogAnimatorTooltips, Assembly-CSharp
+        m_MethodName: AnimateTooltipsText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &754820507
 GameObject:
   m_ObjectHideFlags: 0
@@ -7405,6 +7453,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 818106038}
+        m_TargetAssemblyTypeName: DialogAnimatorTooltips, Assembly-CSharp
+        m_MethodName: AnimateTooltipsText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &787670474
 GameObject:
   m_ObjectHideFlags: 0
@@ -7629,6 +7689,7 @@ GameObject:
   - component: {fileID: 818106036}
   - component: {fileID: 818106035}
   - component: {fileID: 818106034}
+  - component: {fileID: 818106038}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -7728,6 +7789,29 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &818106038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818106033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c58ee043ea458d4bae4c5ece8fd1932, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogues:
+  - {fileID: 955591308}
+  - {fileID: 344741523}
+  - {fileID: 2097198008}
+  - {fileID: 393354696}
+  - {fileID: 1816658853}
+  - {fileID: 10305300}
+  - {fileID: 29189290}
+  - {fileID: 1549066934}
+  - {fileID: 1766898983}
+  - {fileID: 1141449309}
 --- !u!1 &833461854
 GameObject:
   m_ObjectHideFlags: 0
@@ -10166,6 +10250,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 818106038}
+        m_TargetAssemblyTypeName: DialogAnimatorTooltips, Assembly-CSharp
+        m_MethodName: AnimateTooltipsText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &1141449309
 GameObject:
   m_ObjectHideFlags: 0
@@ -11052,6 +11148,18 @@ MonoBehaviour:
       - m_Target: {fileID: 536257017}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 818106038}
+        m_TargetAssemblyTypeName: DialogAnimatorTooltips, Assembly-CSharp
+        m_MethodName: AnimateTooltipsText
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11950,6 +12058,18 @@ MonoBehaviour:
       - m_Target: {fileID: 536257017}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 818106038}
+        m_TargetAssemblyTypeName: DialogAnimatorTooltips, Assembly-CSharp
+        m_MethodName: AnimateTooltipsText
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13037,6 +13157,18 @@ MonoBehaviour:
       - m_Target: {fileID: 536257017}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 818106038}
+        m_TargetAssemblyTypeName: DialogAnimatorTooltips, Assembly-CSharp
+        m_MethodName: AnimateTooltipsText
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22833,6 +22965,18 @@ MonoBehaviour:
       - m_Target: {fileID: 536257017}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 818106038}
+        m_TargetAssemblyTypeName: DialogAnimatorTooltips, Assembly-CSharp
+        m_MethodName: AnimateTooltipsText
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
