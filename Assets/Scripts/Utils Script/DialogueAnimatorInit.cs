@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using Unity.PlasticSCM.Editor.WebApi;
 
 public class DialogueAnimatorInit : MonoBehaviour
 {
@@ -14,21 +15,23 @@ public class DialogueAnimatorInit : MonoBehaviour
     public TMP_Text CharacterNameTextField;
     public TMP_Text DialogTextField;
 
-    // public int[] InvokeNPCDialogIndex;
 
     [SerializeField] string ToddName;
     [SerializeField] string CharacterName;
+    [SerializeField] int[] NPCDialogIndex;
 
     [TextArea(3, 10)]// Makes the text area larger by min and mx number of lines
     [SerializeField] string[] DialogLines;
 
     private DialogueVertexAnimator dialogueVertexAnimator;
     private int index=0;
+    private int CurrentNPCDialogueIndex=0;
 
     // Start is called before the first frame update
     void Start()
     {
         index = 0;
+        CurrentNPCDialogueIndex=0;
         // DisplayDialogue();
     }
 
@@ -44,6 +47,7 @@ public class DialogueAnimatorInit : MonoBehaviour
         }
     
         if(index==4||index==5||index==7||index==8){
+        // if(index == GetNPCDialogueIndex()){
             CharacterNameTextField.text = CharacterName;
             CharacterSprite.SetActive(true);
             ToddSprite.GetComponent<Animator>().Play("ToddDarken");
@@ -60,6 +64,13 @@ public class DialogueAnimatorInit : MonoBehaviour
         }
 
     }
+    // int GetNPCDialogueIndex(){
+    //     int value;
+    //     for(int i=0; i<NPCDialogIndex.Length;i++){
+    //         value = NPCDialogIndex[i];
+    //     }
+    //     return value;
+    // }
     public void DisplayDialogue(){
         dialogueVertexAnimator = new DialogueVertexAnimator(DialogTextField);
         PlayDialogue(DialogLines[index]);

@@ -3398,6 +3398,7 @@ MonoBehaviour:
   CharacterSprite: {fileID: 1604109997}
   CharacterNameTextField: {fileID: 550637641}
   DialogTextField: {fileID: 500411244}
+  NPCDialogIndex: 04000000050000000700000008000000
   ToddName: Todd Fox
   CharacterName: Alberich
   DialogLines:
