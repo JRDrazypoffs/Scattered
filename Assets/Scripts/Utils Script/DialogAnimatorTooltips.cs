@@ -23,6 +23,7 @@ public class DialogAnimatorTooltips : MonoBehaviour
     {
         
     }
+    private DialogueVertexAnimator dialogueVertexAnimator;
 
     public void AnimateTooltipsText(){
         for(int i = 0; i < Dialogues.Length; i++){
@@ -31,19 +32,30 @@ public class DialogAnimatorTooltips : MonoBehaviour
             }
         }
         Sentence = Dialogues[index].GetComponent<TMP_Text>().text;
-        StartCoroutine(TypeSentence(Sentence, index));
+        // StartCoroutine(TypeSentence(Sentence, index));
+        dialogueVertexAnimator = new DialogueVertexAnimator(Dialogues[index].GetComponent<TMP_Text>());
+        PlayDialogue(Sentence);
+
     }
 
-    public void StopAnimation(){
-        // this function will stop the animationof other elements
-        StopAllCoroutines();
-    }
+    // public void StopAnimation(){
+    //     // this function will stop the animationof other elements
+    //     StopAllCoroutines();
+    // }
 
-    IEnumerator TypeSentence (String sentence, int index){
-        Dialogues[index].GetComponent<TMP_Text>().text = "";
-        foreach(char letter in sentence.ToCharArray()){
-            Dialogues[index].GetComponent<TMP_Text>().text += letter;
-            yield return null;
-        }
+    // IEnumerator TypeSentence (String sentence, int index){
+    //     Dialogues[index].GetComponent<TMP_Text>().text = "";
+    //     foreach(char letter in sentence.ToCharArray()){
+    //         Dialogues[index].GetComponent<TMP_Text>().text += letter;
+    //         yield return null;
+    //     }
+    // }
+
+    private Coroutine typeRoutine = null;
+    void PlayDialogue(string message) {
+        this.EnsureCoroutineStopped(ref typeRoutine);
+        dialogueVertexAnimator.textAnimating = false;
+        List<DialogueCommand> commands = DialogueUtility.ProcessInputString(message, out string totalTextMessage);
+        typeRoutine = StartCoroutine(dialogueVertexAnimator.AnimateTextIn(commands, totalTextMessage, null));
     }
 }
