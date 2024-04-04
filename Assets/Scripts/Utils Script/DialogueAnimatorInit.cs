@@ -53,6 +53,8 @@ public class DialogueAnimatorInit : MonoBehaviour
             CharacterSprite.SetActive(true);
             ToddSprite.GetComponent<Animator>().Play("ToddDarken");
             CharacterSprite.GetComponent<Animator>().Play("CharacterDarkenReverse");
+        }else if(index==1 && NPCDialogIndex.Any(n => n != index)){
+            CharacterSprite.SetActive(false);
         }else{
             CharacterNameTextField.text = ToddName;
             CharacterSprite.GetComponent<Animator>().Play("CharacterDarken");
