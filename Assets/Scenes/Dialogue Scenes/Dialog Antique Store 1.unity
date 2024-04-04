@@ -3400,7 +3400,7 @@ MonoBehaviour:
   DialogTextField: {fileID: 500411244}
   ToddName: Todd Fox
   CharacterName: Alberich
-  NPCDialogIndex: 0400000005000000060000000800000009000000
+  NPCDialogIndex: 04000000050000000600000008000000090000000a000000
   DialogLines:
   - Hi... Thanks for your concern... The name's Todd, Todd Fox. You must be wondering
     why I'm pacing back and forth... I'm Looking for my son, <color=#60B2D7><b>Kitt</b></color>...
@@ -3411,19 +3411,20 @@ MonoBehaviour:
     quite like me except... smaller?
   - Oh hey, Todd! I think I briefly saw him earlier! he was fiddling around with
     this <color=#F0C75E><b>Music Box</b></color>. I later then went to arrange some
-    goods on the table, but when I turned around to find him, he's gone!
+    goods on the table, but when I turned around, he's gone!
   - ' I assumed he went to look for <color=#60B2D7><b>Gawain''s son, Lovell</b></color>
     next door?'
-  - He didn't take the music box with him though... but the cylinder has already
-    been missing for some time. You can keep it if you manage to find the cylinder!
-    You know, a music box is kinda worthless without its cylinder.
+  - He didn't take the music box with him though... but the cylinder inside has already
+    been missing for years! You can keep it if you manage to find the cylinder! You
+    know, a music box is kinda worthless without its cylinder.
   - Alright, thanks Al! Let's take a look around the store for clues!
   - I bid you good luck in your search of your son, Todd! Oh, also  if you happen
-    to drop by <color=#509D69><b>Bear Necessi-teas Cafe</b></color> next door, please
+    to drop by <color=#509D69><b>Bear Necessi-Teas Cafe</b></color> next door, please
     help me pass the antique coffee grinder to <color=#60B2D7><b>Gawain</b></color>!
-  - He has been eyeing on this item for a while, says it retains the aroma and flavour
-    of the coffee beans way better than the modern stuff... but he hasn't shown up
-    to collect it. Now you might need to help me find it in among the clutter!
+  - 'He has been eyeing on this item for a while, says it retains the aroma and flavour
+    of the coffee beans way better than the modern stuff... '
+  - But he has yet to show up to collect it. It's now hidden among the clutter in
+    my shop! I'm going to need your help to find it again...
   - Sure, leave it to <b>us</b>! We probably might need to drop by there anyways
     to see if <color=#60B2D7><b>Kitt</b></color> is hanging out with <color=#60B2D7><b>Lovell</b></color>.
 --- !u!1 &1680312507
