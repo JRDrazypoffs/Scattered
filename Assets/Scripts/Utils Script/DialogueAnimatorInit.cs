@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
@@ -46,8 +47,8 @@ public class DialogueAnimatorInit : MonoBehaviour
             HelpToddBtn.SetActive(false);
         }
     
-        if(index==4||index==5||index==7||index==8){
-        // if(index == GetNPCDialogueIndex()){
+        // if(index==4||index==5||index==7||index==8){
+        if(NPCDialogIndex.Any(n => n == index)){
             CharacterNameTextField.text = CharacterName;
             CharacterSprite.SetActive(true);
             ToddSprite.GetComponent<Animator>().Play("ToddDarken");
@@ -64,13 +65,7 @@ public class DialogueAnimatorInit : MonoBehaviour
         }
 
     }
-    // int GetNPCDialogueIndex(){
-    //     int value;
-    //     for(int i=0; i<NPCDialogIndex.Length;i++){
-    //         value = NPCDialogIndex[i];
-    //     }
-    //     return value;
-    // }
+
     public void DisplayDialogue(){
         dialogueVertexAnimator = new DialogueVertexAnimator(DialogTextField);
         PlayDialogue(DialogLines[index]);
