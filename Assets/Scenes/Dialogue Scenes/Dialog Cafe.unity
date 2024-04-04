@@ -2589,7 +2589,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <color=#F0C75E>Chapter Two <size=70%>:</color> Coffee or Tea? But no Kitt!</size>
+  m_text: <color=#F0C75E>Chapter Two <size=70%>:</color> Coffee or Tea?</size>
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b66a8b3aaf639d342b81e0fd6cdad673, type: 2}
   m_sharedMaterial: {fileID: 5209162484070792290, guid: b66a8b3aaf639d342b81e0fd6cdad673, type: 2}

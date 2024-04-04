@@ -293,7 +293,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 116230943339425024, guid: 4e4cb5f9e0952f8488f3fa9b7edafacd, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 2e3c8285ae7555343b3644d66d43ff2c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 39cf2fbf028ab144f98a596b7037ed46, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -469,7 +469,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1500162789}
-  - {fileID: 387039939}
   - {fileID: 521474132}
   m_Father: {fileID: 2021325247}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -851,167 +850,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &387039938
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 387039939}
-  - component: {fileID: 387039943}
-  - component: {fileID: 387039942}
-  - component: {fileID: 387039941}
-  - component: {fileID: 387039940}
-  m_Layer: 5
-  m_Name: Help Him!
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &387039939
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 387039938}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 723743092}
-  m_Father: {fileID: 167805214}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 358.7221, y: -25.520199}
-  m_SizeDelta: {x: 200, y: 40}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &387039940
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 387039938}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
-  m_EffectDistance: {x: 5, y: -5}
-  m_UseGraphicAlpha: 1
---- !u!114 &387039941
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 387039938}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 387039942}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 357259310}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1677407594}
-        m_TargetAssemblyTypeName: DialogueAnimator, Assembly-CSharp
-        m_MethodName: IncreaseDialogIndex
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &387039942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 387039938}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.9529412, g: 0.5568628, b: 0.14117648, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &387039943
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 387039938}
-  m_CullTransparentMesh: 1
 --- !u!1 &390192365
 GameObject:
   m_ObjectHideFlags: 0
@@ -1069,7 +907,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ask what's wrong?
+  m_text: Continue
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 372b54553aed221459d863ffc245eb54, type: 2}
   m_sharedMaterial: {fileID: 2850315956538373923, guid: 372b54553aed221459d863ffc245eb54, type: 2}
@@ -1096,8 +934,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16
-  m_fontSizeBase: 16
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1188,7 +1026,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -6153354261749794301, guid: 4e4cb5f9e0952f8488f3fa9b7edafacd, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 65da9fc4e9a14a34ea8db577ad7631c4, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6eedcb88eef651a47a7fe404280c02f3, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1300,8 +1138,8 @@ Transform:
   m_GameObject: {fileID: 474895335}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.33618477, y: 0.33618477, z: 0.33618477}
+  m_LocalPosition: {x: -0.52, y: 0, z: 0}
+  m_LocalScale: {x: 0.40036243, y: 0.40036243, z: 0.40036243}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 931761509}
@@ -1347,7 +1185,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -4
-  m_Sprite: {fileID: 21300000, guid: 11c7d52ae528aa84383714c0c097ec0f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9edd6d1ce68d4b34a9cc7c9129ca606f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1605,8 +1443,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1677407594}
-        m_TargetAssemblyTypeName: DialogueAnimator, Assembly-CSharp
+      - m_Target: {fileID: 1677407595}
+        m_TargetAssemblyTypeName: SelectArea, Assembly-CSharp
         m_MethodName: EnterArea
         m_Mode: 5
         m_Arguments:
@@ -1614,7 +1452,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Antique Store
+          m_StringArgument: Library
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &521474135
@@ -2080,140 +1918,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!1 &723743091
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 723743092}
-  - component: {fileID: 723743094}
-  - component: {fileID: 723743093}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &723743092
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 723743091}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 387039939}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &723743093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 723743091}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Help Todd!
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 372b54553aed221459d863ffc245eb54, type: 2}
-  m_sharedMaterial: {fileID: 2850315956538373923, guid: 372b54553aed221459d863ffc245eb54, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 1
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &723743094
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 723743091}
-  m_CullTransparentMesh: 1
 --- !u!1001 &835192916
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2739,19 +2443,31 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "As you stepped into Alberich\u2019s Antiques, a quaint store nestled in
-    the heart of town, your attention was drawn to a fox pacing anxiously amidst
-    the dusty aisles. Something about his demeanor piqued your curiosity; there was
-    a tension in the air, an unspoken worry etched across his features.\r\n\r\nHis
-    eyes darted from one antique to the next, as if searching for something elusive
-    yet profoundly important. You couldn't help but feel drawn into the silent drama
-    unfolding before you. What could possibly trouble this fox so deeply in a place
-    filled with relics of the past?\r\n\r\nAs you approached, the fox's gaze momentarily
-    flickered towards you, a fleeting hope shimmering in his eyes before fading away.
-    It was then that you realized he wasn't searching for an item, but for someone\u2014a
-    missing son.\r\n\r\nIntrigued by the mystery unfolding before you, you couldn't
-    resist the urge to inquire. With a mixture of compassion and curiosity, you gently
-    approached the fox, offering a sympathetic ear and a simple question.\r\n"
+  m_text: 'As you arrived at the library, your eyes widened in awe at the sight of
+    the majestic building. It was a place you had never visited before, and its grandeur
+    left you breathless. Todd, usually somber, couldn''t help but smile as he reminisced
+    about bringing Kitt here for the first time, recognizing the same sense of wonder
+    mirrored in your expression.
+
+    
+
+    As both of you entered the library,
+    you were captivated by the endless rows of bookshelves, each promising boundless
+    adventure and wisdom. However, you couldn''t help but notice the absence of other
+    employees, realizing that Reina, the librarian, had been single-handedly maintaining
+    the library''s order and tranquility. Despite the solitude, a sense of respect
+    and admiration washed over you. It was clear that Reina''s dedication to her
+    craft went beyond mere duty; it was a labor of love for the world of literature.
+
+    
+
+    As
+    you traversed the labyrinth of shelves, Todd''s keen eye caught sight of Reina
+    seated by a large window, engrossed in the pages of a particularly hefty tome.
+    Her serene concentration, juxtaposed with her bubbly personality, painted a vivid
+    portrait of a woman who found solace and joy in the pages of a book.
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f1f09eaf0cd87194c95e4df28a7a508c, type: 2}
   m_sharedMaterial: {fileID: 5742468250113575934, guid: f1f09eaf0cd87194c95e4df28a7a508c, type: 2}
@@ -2886,8 +2602,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <color=#F0C75E>Chapter One <size=70%>:</color> Is This What You're Looking
-    For?</size>
+  m_text: <color=#F0C75E>Chapter Four <size=70%>:</color> Inquirious</size>
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b66a8b3aaf639d342b81e0fd6cdad673, type: 2}
   m_sharedMaterial: {fileID: 5209162484070792290, guid: b66a8b3aaf639d342b81e0fd6cdad673, type: 2}
@@ -3175,14 +2890,14 @@ RectTransform:
   m_GameObject: {fileID: 1604109997}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.54999995, y: 0.54999995, z: 0.54999995}
+  m_LocalScale: {x: 0.40908173, y: 0.40908173, z: 0.40908173}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1880220228}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -19}
+  m_AnchoredPosition: {x: 0, y: -63}
   m_SizeDelta: {x: 997, y: 842}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1604109999
@@ -3220,7 +2935,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d6ec56655487caf4bbcdcd49c2eb2043, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dcbb6d848939a3d4797ee5c5a4b6745f, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -3273,6 +2988,7 @@ GameObject:
   - component: {fileID: 1677407589}
   - component: {fileID: 1677407593}
   - component: {fileID: 1677407594}
+  - component: {fileID: 1677407595}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3379,7 +3095,7 @@ MonoBehaviour:
   WhatsWrongBtn: {fileID: 633256658}
   NarrativePanel: {fileID: 1234261342}
   NarrativeText: {fileID: 1269522972}
-  DelayDialogTriggerBtnBySecs: 12
+  DelayDialogTriggerBtnBySecs: 10
 --- !u!114 &1677407594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3389,45 +3105,66 @@ MonoBehaviour:
   m_GameObject: {fileID: 1677407588}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c68de5da600b2314cb14f05a88fab416, type: 3}
+  m_Script: {fileID: 11500000, guid: 00a84eecc2ae8f44187241a3c857f8d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ContinueBtn: {fileID: 1500162788}
   EnterHOGsceneBtn: {fileID: 521474131}
-  HelpToddBtn: {fileID: 387039938}
   ToddSprite: {fileID: 1939683278}
   CharacterSprite: {fileID: 1604109997}
   CharacterNameTextField: {fileID: 550637641}
   DialogTextField: {fileID: 500411244}
   ToddName: Todd Fox
-  CharacterName: Alberich
-  NPCDialogIndex: 04000000050000000600000008000000090000000a000000
+  CharacterName: Reina
+  NPCDialogIndex: 0000000002000000040000000500000007000000090000000b0000000c0000000e000000
   DialogLines:
-  - Hi... Thanks for your concern... The name's Todd, Todd Fox. You must be wondering
-    why I'm pacing back and forth... I'm Looking for my son, <color=#60B2D7><b>Kitt</b></color>...
-    He suddenly went missing here!  It would be great if you could help me find him.
-  - Thank you, thank you so much! I suppose we can ask the store owner if he has
-    seen <color=#60B2D7><b>Kitt</b></color> earlier.
-  - Hi Alberich, I was wondering if you have seen my son earlier? You know, he looks
-    quite like me except... smaller?
-  - Oh hey, Todd! I think I briefly saw him earlier! he was fiddling around with
-    this <color=#F0C75E><b>Music Box</b></color>. I later then went to arrange some
-    goods on the table, but when I turned around, he's gone!
-  - ' I assumed he went to look for <color=#60B2D7><b>Gawain''s son, Lovell</b></color>
-    next door?'
-  - He didn't take the music box with him though... but the cylinder inside has already
-    been missing for years! You can keep it if you manage to find the cylinder! You
-    know, a music box is kinda worthless without its cylinder.
-  - Alright, thanks Al! Let's take a look around the store for clues!
-  - I bid you good luck in your search of your son, Todd! Oh, also  if you happen
-    to drop by <color=#509D69><b>Bear Necessi-Teas Cafe</b></color> next door, please
-    help me pass the antique coffee grinder to <color=#60B2D7><b>Gawain</b></color>!
-  - 'He has been eyeing on this item for a while, says it retains the aroma and flavour
-    of the coffee beans way better than the modern stuff... '
-  - But he has yet to show up to collect it. It's now hidden among the clutter in
-    my shop! I'm going to need your help to find it again...
-  - Sure, leave it to <b>us</b>! We probably might need to drop by there anyways
-    to see if <color=#60B2D7><b>Kitt</b></color> is hanging out with <color=#60B2D7><b>Lovell</b></color>.
+  - "Hello <color=#60B2D7><b>Reina</b></color>, I suppose you\u2019ve been looking
+    for this?"
+  - Oh, hey <color=#60B2D7><b>Todd</b></color>! Oh yes, one from my finest collections,
+    and it has been overdue for 31 days!
+  - "What?! Does <color=#60B2D7><b>Amon</b></color> knows this? I\u2019m not the
+    one who borrowed it, should I pay the fine? I've never borrowed books from here
+    before!"
+  - "Relax, <color=#60B2D7><b>Todd</b></color>! I was only kidding, there are no
+    fines in my library! And note that I don\u2019t lend these tomes just to anyone\u2026
+    Though I may need to reconsider lending them to <color=#60B2D7><b>Amon</b></color>\u2026
+    ha ha ha!"
+  - "Anyways what brings you here? Where\u2019s <color=#60B2D7><b>Kitt</b></color>?"
+  - "I would be asking you the same question <color=#60B2D7><b>Reina</b></color>!
+    He went missing at the antique store and I\u2019ve been all over town looking
+    for him\u2026"
+  - "Oh dear, I assumed you have checked at the <color=#509D69><b>Museum</b></color>
+    since you probably came here from there to return this\u2026 What about the <color=#509D69><b>Cafe</b></color>?
+    <color=#60B2D7><b>Kitt</b></color> likes going there to hang out with <color=#60B2D7><b>Lovell</b></color>.\r"
+  - "Oh, but we\u2019ve been there, and <color=#60B2D7><b>Lovell</b></color> is out
+    of town! I wonder where else we haven\u2019t looked. He could be anywhere!"
+  - "Then maybe he\u2019s at the <color=#509D69><b>Central Park</b></color>? He likes
+    to watch the koi fish that swims in the pond there!"
+  - "Oh, that makes sense now! He always brings home drawings of koi fishes when
+    he come home from the park\u2026 How did you know he always does that?"
+  - Well, I can see almost everything around town from my <color=#509D69><b>Library</b></color>!
+    There are windows everywhere, ha ha! Plus, you might want to keep a eye out for
+    him more, kids at this age are often unpredictable!
+  - "Oh, speaking of drawing, I think you left your <color=#F0C75E><b>Easel</b></color>
+    in the reading room\u2026 Maybe you might want to collect it?"
+  - Oh, heavens yes, I would! I've been looking for it for the last couple days.
+    I feel as though I might have become just as forgetful as <color=#60B2D7><b>Amon</b></color>!
+  - "Ha ha! You become more forgetful with age, <color=#60B2D7><b>Todd</b></color>.
+    Here, I\u2019ll lead the way there. I hope you find your son safe and sound."
+  - "Thank you <color=#60B2D7><b>Reina</b></color>, I sure do hope so too\u2026"
+--- !u!114 &1677407595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677407588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4624b57f03839584dbfd4d541e9aba0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons: []
 --- !u!1 &1680312507
 GameObject:
   m_ObjectHideFlags: 0
@@ -3641,7 +3378,7 @@ GameObject:
   - component: {fileID: 1805337799}
   - component: {fileID: 1805337800}
   m_Layer: 0
-  m_Name: DoorChimes
+  m_Name: Book
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3672,7 +3409,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -6153354261749794301, guid: 4e4cb5f9e0952f8488f3fa9b7edafacd, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 63ebda9e0a41d564b92347aa6c32d7f8, type: 3}
+  m_audioClip: {fileID: 8300000, guid: f300ad1fbe00caf49afefcc5dd034b65, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
