@@ -29,7 +29,7 @@ public class MainMenu : MonoBehaviour
     }
 
     public void LaunchInitScene(){
-        SceneManager.LoadSceneAsync("Dialog Antique Store 1");
+        SceneManager.LoadSceneAsync("Dialog Antique Store");
     }
 
     public void LoadMainMenu(){
