@@ -25,13 +25,13 @@ public class DialogueAnimator : MonoBehaviour
 
     private DialogueVertexAnimator dialogueVertexAnimator;
     private int index=0;
-    private int CurrentNPCDialogueIndex=0;
+    // private int CurrentNPCDialogueIndex=0;
 
     // Start is called before the first frame update
     void Start()
     {
         index = 0;
-        CurrentNPCDialogueIndex=0;
+        // CurrentNPCDialogueIndex=0;
         // DisplayDialogue();
     }
 
@@ -45,6 +45,8 @@ public class DialogueAnimator : MonoBehaviour
             CharacterSprite.SetActive(true);
             ToddSprite.GetComponent<Animator>().Play("ToddDarken");
             CharacterSprite.GetComponent<Animator>().Play("CharacterDarkenReverse");
+        }else if(index==1 && NPCDialogIndex.Any(n => n != index)){
+            CharacterSprite.SetActive(false);
         }else{
             CharacterNameTextField.text = ToddName;
             CharacterSprite.GetComponent<Animator>().Play("CharacterDarken");
