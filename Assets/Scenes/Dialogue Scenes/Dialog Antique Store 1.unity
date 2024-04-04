@@ -987,7 +987,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3137255, g: 0.6156863, b: 0.4117647, a: 1}
+  m_Color: {r: 0.9529412, g: 0.5568628, b: 0.14117648, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2886,7 +2886,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Introduction
+  m_text: <color=#F0C75E>Chapter One <size=70%>:</color> Introduction</size>
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b66a8b3aaf639d342b81e0fd6cdad673, type: 2}
   m_sharedMaterial: {fileID: 5209162484070792290, guid: b66a8b3aaf639d342b81e0fd6cdad673, type: 2}
@@ -3398,9 +3398,9 @@ MonoBehaviour:
   CharacterSprite: {fileID: 1604109997}
   CharacterNameTextField: {fileID: 550637641}
   DialogTextField: {fileID: 500411244}
-  NPCDialogIndex: 04000000050000000700000008000000
   ToddName: Todd Fox
   CharacterName: Alberich
+  NPCDialogIndex: 0400000005000000060000000800000009000000
   DialogLines:
   - Hi... Thanks for your concern... The name's Todd, Todd Fox. You must be wondering
     why I'm pacing back and forth... I'm Looking for my son, <color=#60B2D7><b>Kitt</b></color>...
@@ -3409,21 +3409,23 @@ MonoBehaviour:
     seen <color=#60B2D7><b>Kitt</b></color> earlier.
   - Hi Alberich, I was wondering if you have seen my son earlier? You know, he looks
     quite like me except... smaller?
-  - 'Oh hey, Todd! I think I briefly saw him earlier! he was fiddling around with
-    this <color=#F0C75E><b>Music Box</b></color> earlier, and he just disappeared
-    when I turned around again. '
+  - Oh hey, Todd! I think I briefly saw him earlier! he was fiddling around with
+    this <color=#F0C75E><b>Music Box</b></color>. I later then went to arrange some
+    goods on the table, but when I turned around to find him, he's gone!
+  - ' I assumed he went to look for <color=#60B2D7><b>Gawain''s son, Lovell</b></color>
+    next door?'
   - He didn't take the music box with him though... but the cylinder has already
     been missing for some time. You can keep it if you manage to find the cylinder!
     You know, a music box is kinda worthless without its cylinder.
   - Alright, thanks Al! Let's take a look around the store for clues!
-  - I bid you good luck in your search of your son, Todd! Oh if you happen to drop
-    by <color=#509D69><b>Bear Necessi-teas Cafe</b></color> next door, help me pass
-    the old coffee grinder to <color=#60B2D7><b>Gawain</b></color>!
+  - I bid you good luck in your search of your son, Todd! Oh, also  if you happen
+    to drop by <color=#509D69><b>Bear Necessi-teas Cafe</b></color> next door, please
+    help me pass the antique coffee grinder to <color=#60B2D7><b>Gawain</b></color>!
   - He has been eyeing on this item for a while, says it retains the aroma and flavour
     of the coffee beans way better than the modern stuff... but he hasn't shown up
     to collect it. Now you might need to help me find it in among the clutter!
-  - Sure, leave it to <b>us</b>! I probably might need to drop by there anyways to
-    see if <color=#60B2D7><b>Kitt</b></color> is hanging out with <color=#60B2D7><b>Lovell</b></color>.
+  - Sure, leave it to <b>us</b>! We probably might need to drop by there anyways
+    to see if <color=#60B2D7><b>Kitt</b></color> is hanging out with <color=#60B2D7><b>Lovell</b></color>.
 --- !u!1 &1680312507
 GameObject:
   m_ObjectHideFlags: 0

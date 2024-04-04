@@ -28,6 +28,10 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadSceneAsync("Start New Game Menu");
     }
 
+    public void LaunchInitScene(){
+        SceneManager.LoadSceneAsync("Dialog Antique Store 1");
+    }
+
     public void LoadMainMenu(){
         SceneManager.LoadSceneAsync("Main Menu");
     }
