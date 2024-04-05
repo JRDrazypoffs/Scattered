@@ -5427,6 +5427,7 @@ MonoBehaviour:
   - {fileID: 13008399}
   - {fileID: 671737223}
   - {fileID: 668410252}
+  clearedIndex: 00000000000000
 --- !u!1 &737073410
 GameObject:
   m_ObjectHideFlags: 0
