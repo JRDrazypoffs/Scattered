@@ -5,36 +5,36 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class DialogueAnimatorInit : MonoBehaviour
+public class DialogueAnimatorEnd : MonoBehaviour
 {
     public GameObject ContinueBtn;
     public GameObject EnterHOGsceneBtn;
-    public GameObject HelpToddBtn;
     public GameObject ToddSprite;
+    public GameObject KittSprite;
     public GameObject CharacterSprite;
     public TMP_Text CharacterNameTextField;
     public TMP_Text DialogTextField;
 
 
     [SerializeField] string ToddName;
+    [SerializeField] string KittName;
     [SerializeField] string CharacterName;
     [SerializeField] int[] NPCDialogIndex;
-    // [SerializeField] int[] NarrationIndex;
-
+    [SerializeField] int[] KittDialogIndex;
+    [SerializeField] int[] NarrationIndex;
 
     [TextArea(3, 10)]// Makes the text area larger by min and mx number of lines
     [SerializeField] string[] DialogLines;
 
     private DialogueVertexAnimator dialogueVertexAnimator;
     private int index=0;
+    private string PlayerName;
     // private int CurrentNPCDialogueIndex=0;
-    // private string PlayerName;
-
 
     // Start is called before the first frame update
     void Start()
     {
-        // PlayerName = PlayerPrefs.GetString("Player Pref Username");
+        PlayerName = PlayerPrefs.GetString("Player Pref Username");
         index = 0;
         // CurrentNPCDialogueIndex=0;
         // DisplayDialogue();
@@ -43,13 +43,6 @@ public class DialogueAnimatorInit : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(index==1){
-            ContinueBtn.SetActive(false);
-            HelpToddBtn.SetActive(true);
-        }else{
-            ContinueBtn.SetActive(true);
-            HelpToddBtn.SetActive(false);
-        }
     
         // if(index==4||index==5||index==7||index==8){
         if(NPCDialogIndex.Any(n => n == index)){//checks the cues for npc character to be emphasised
@@ -57,16 +50,24 @@ public class DialogueAnimatorInit : MonoBehaviour
             CharacterSprite.SetActive(true);
             ToddSprite.GetComponent<Animator>().Play("ToddDarken");
             CharacterSprite.GetComponent<Animator>().Play("CharacterDarkenReverse");
-        }/*else if(NarrationIndex.Any(n => n == index)){
+        }else if(KittDialogIndex.Any(n => n == index)){
+            CharacterNameTextField.text = KittName;
+            KittSprite.SetActive(true);
+            ToddSprite.GetComponent<Animator>().Play("ToddDarken");
+            KittSprite.GetComponent<Animator>().Play("CharacterDarkenReverse");
+        }else if(NarrationIndex.Any(n => n == index)){
             CharacterNameTextField.text = PlayerName;
             CharacterNameTextField.text = "Narrator";
             ToddSprite.GetComponent<Animator>().Play("ToddDarken");
             CharacterSprite.GetComponent<Animator>().Play("CharacterDarken");
-        }*/else if(index==1 && NPCDialogIndex.Any(n => n != index)){
+            KittSprite.GetComponent<Animator>().Play("CharacterDarken");
+        }else if((index==1 && NPCDialogIndex.Any(n => n != index))||(index==1 && KittDialogIndex.Any(n => n != index))){
             CharacterSprite.SetActive(false);
+            KittSprite.SetActive(false);
         }else{
             CharacterNameTextField.text = ToddName;
             CharacterSprite.GetComponent<Animator>().Play("CharacterDarken");
+            KittSprite.GetComponent<Animator>().Play("CharacterDarken");
             ToddSprite.GetComponent<Animator>().Play("ToddDarkenReverse");
         }
 

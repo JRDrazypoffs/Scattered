@@ -4,7 +4,6 @@ using System.Linq;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
-using Unity.PlasticSCM.Editor.WebApi;
 
 public class DialogueAnimator : MonoBehaviour
 {
@@ -19,17 +18,21 @@ public class DialogueAnimator : MonoBehaviour
     [SerializeField] string ToddName;
     [SerializeField] string CharacterName;
     [SerializeField] int[] NPCDialogIndex;
+    // [SerializeField] int[] NarrationIndex;
 
     [TextArea(3, 10)]// Makes the text area larger by min and mx number of lines
     [SerializeField] string[] DialogLines;
 
     private DialogueVertexAnimator dialogueVertexAnimator;
     private int index=0;
+    // private string PlayerName;
+
     // private int CurrentNPCDialogueIndex=0;
 
     // Start is called before the first frame update
     void Start()
     {
+        // PlayerName = PlayerPrefs.GetString("Player Pref Username");
         index = 0;
         // CurrentNPCDialogueIndex=0;
         // DisplayDialogue();
@@ -45,7 +48,12 @@ public class DialogueAnimator : MonoBehaviour
             CharacterSprite.SetActive(true);
             ToddSprite.GetComponent<Animator>().Play("ToddDarken");
             CharacterSprite.GetComponent<Animator>().Play("CharacterDarkenReverse");
-        }else if(index==1 && NPCDialogIndex.Any(n => n != index)){
+        }/*else if(NarrationIndex.Any(n => n == index)){
+            CharacterNameTextField.text = PlayerName;
+            CharacterNameTextField.text = "Narrator";
+            ToddSprite.GetComponent<Animator>().Play("ToddDarken");
+            CharacterSprite.GetComponent<Animator>().Play("CharacterDarken");
+        }*/else if(index==1 && NPCDialogIndex.Any(n => n != index)){
             CharacterSprite.SetActive(false);
         }else{
             CharacterNameTextField.text = ToddName;

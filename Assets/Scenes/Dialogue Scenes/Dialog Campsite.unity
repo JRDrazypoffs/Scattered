@@ -3324,12 +3324,20 @@ MonoBehaviour:
   DialogTextField: {fileID: 500411244}
   ToddName: Todd Fox
   CharacterName: Mysterious Deer
-  NPCDialogIndex: 0200000003000000
+  NPCDialogIndex: 0600000008000000
   DialogLines:
-  - Todd dialogue
-  - Kitt Dialogue
-  - Kitt DIalogue
-  - Todd Dialogue
+  - "Ugh\u2026 That was one hellish boat ride\u2026 "
+  - "Gosh the woods are sure thick\u2026 I sure hope <color=#60B2D7><b>Kitt</b></color>
+    isn\u2019t lost in there\u2026 Hmm\u2026"
+  - "Should I really make a missing person\u2019s report? If I request for a rescue
+    team now, maybe <color=#60B2D7><b>Kitt</b></color> could be found sooner\u2026"
+  - "You were saying\u2026?"
+  - That <color=#60B2D7><b>Mysterious Deer</b></color>? Where?
+  - "\u2026"
+  - <b>YOU!! WHERE IS MY SON, <color=#60B2D7>KITT</color>?!</b>
+  - "\u2026"
+  - "It\u2019s getting away! Quick, let's chase after it! I don't need sleep, I need
+    answers!"
 --- !u!114 &1677407595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3343,7 +3351,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  clearedIndex: 
 --- !u!1 &1680312507
 GameObject:
   m_ObjectHideFlags: 0

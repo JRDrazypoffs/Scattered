@@ -16,7 +16,7 @@ EditorBuildSettings:
     guid: 4d2525290f6573b448e378e04fc9bcd0
   - enabled: 1
     path: Assets/Scenes/Cafe.unity
-    guid: 765a12f96e292fe45980d4876203aa4d
+    guid: 3d33467d7b86d794aa0634d62c293285
   - enabled: 1
     path: Assets/Scenes/Museum.unity
     guid: 860a9b45d65732f4793a5da934eca8cb
@@ -45,23 +45,26 @@ EditorBuildSettings:
     path: Assets/Scenes/Dialogue Scenes/Dialog Antique Store.unity
     guid: 7dda9d6df89cca847b121c173f46326d
   - enabled: 1
-    path: Assets/Scenes/Dialogue Scenes/Dialog Beach.unity
-    guid: affbaa00098280c4d8274a99f20c5cdc
-  - enabled: 1
     path: Assets/Scenes/Dialogue Scenes/Dialog Cafe.unity
     guid: edf3a2ae908ea944d80dee2e031eadc0
   - enabled: 1
-    path: Assets/Scenes/Dialogue Scenes/Dialog Campsite.unity
-    guid: 582f0793d0d909f42a87f4d172a9bccf
-  - enabled: 1
-    path: Assets/Scenes/Dialogue Scenes/Dialog Central Park.unity
-    guid: 6d1100608913fff4a80c4974392b21eb
+    path: Assets/Scenes/Dialogue Scenes/Dialog Museum.unity
+    guid: 35078b1ee2c571144af6d59951e39472
   - enabled: 1
     path: Assets/Scenes/Dialogue Scenes/Dialog Library.unity
     guid: 0d033e4114f0de04880c7b4b55a17e0c
   - enabled: 1
-    path: Assets/Scenes/Dialogue Scenes/Dialog Museum.unity
-    guid: 35078b1ee2c571144af6d59951e39472
+    path: Assets/Scenes/Dialogue Scenes/Dialog Central Park.unity
+    guid: 6d1100608913fff4a80c4974392b21eb
+  - enabled: 1
+    path: Assets/Scenes/Dialogue Scenes/Dialog Beach.unity
+    guid: affbaa00098280c4d8274a99f20c5cdc
+  - enabled: 1
+    path: Assets/Scenes/Dialogue Scenes/Dialog Campsite.unity
+    guid: fdb75a6fa80ef2646a578d6c09a08772
+  - enabled: 1
+    path: Assets/Scenes/Dialogue Scenes/Dialog Campsite 2.unity
+    guid: 582f0793d0d909f42a87f4d172a9bccf
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 5ba588510aaa8184d8b77a768bca05dc, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: aac1b08a239ee684089282fb6cef076e, type: 2}
