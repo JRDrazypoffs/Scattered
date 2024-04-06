@@ -47,13 +47,9 @@ public class AllFound : MonoBehaviour
     }
 
     void UnlockNewArea(){
-        if(SelectArea.currentLevel == SelectArea.unlockedLevels){
-            SelectArea.currentLevel++;
-            SelectArea.unlockedLevels++;
-            SelectArea.clearedLevels++;
-            PlayerPrefs.SetInt("Current Level", SelectArea.currentLevel);
-            PlayerPrefs.SetInt("Unlocked Levels", SelectArea.unlockedLevels);
-            PlayerPrefs.SetInt("Cleared Levels", SelectArea.clearedLevels);
+        if(SceneManager.GetActiveScene().buildIndex >= PlayerPrefs.GetInt("Reached Index")){
+            PlayerPrefs.SetInt("Reached Index", SceneManager.GetActiveScene().buildIndex + 1);
+            PlayerPrefs.SetInt("Unlocked Levels", PlayerPrefs.GetInt("Unlocked Levels", 0) + 1);
             PlayerPrefs.Save();
         }
     }
