@@ -3409,22 +3409,27 @@ MonoBehaviour:
   CharacterName: Alberich
   NPCDialogIndex: 04000000050000000600000008000000090000000a000000
   DialogLines:
-  - Hi... Thanks for your concern... The name's Todd, Todd Fox. You must be wondering
-    why I'm pacing back and forth... I'm Looking for my son, <color=#60B2D7><b>Kitt</b></color>...
+  - Hi... Thanks for your concern... The name's <color=#60B2D7><b>Todd</b></color>,
+    <color=#60B2D7><b>Todd Fox</b></color>. You must be wondering why I'm pacing
+    back and forth... I'm Looking for my son, <color=#60B2D7><b>Kitt</b></color>...
     He suddenly went missing here!  It would be great if you could help me find him.
-  - Thank you, thank you so much! I suppose we can ask the store owner if he has
-    seen <color=#60B2D7><b>Kitt</b></color> earlier.
-  - Hi Alberich, I was wondering if you have seen my son earlier? You know, he looks
-    quite like me except... smaller?
-  - Oh hey, Todd! I think I briefly saw him earlier! he was fiddling around with
-    this <color=#F0C75E><b>Music Box</b></color>. I later then went to arrange some
-    goods on the table, but when I turned around, he's gone!
-  - ' I assumed he went to look for <color=#60B2D7><b>Gawain''s son, Lovell</b></color>
-    next door?'
+  - Thank you, thank you so much! I suppose we can ask the <color=#60B2D7><b>Alberich,
+    the store owner</b></color> if he has seen <color=#60B2D7><b>Kitt</b></color>
+    earlier.
+  - Hey <color=#60B2D7><b>Al</b></color>, I was wondering if you have seen my son
+    earlier? You know, he looks quite like me except... smaller? The little guy,
+    heh...
+  - Oh hey, <color=#60B2D7><b>Todd</b></color>! I think I briefly saw him earlier!
+    he was fiddling around with this <color=#F0C75E><b>Music Box</b></color>. I later
+    then went to arrange some goods on the table, but when I turned around, he's
+    gone!
+  - I assumed he went to look for <color=#60B2D7><b>Gawain's son, Lovell</b></color>
+    next door?
   - He didn't take the music box with him though... but the cylinder inside has already
     been missing for years! You can keep it if you manage to find the cylinder! You
     know, a music box is kinda worthless without its cylinder.
-  - Alright, thanks Al! Let's take a look around the store for clues!
+  - Alright, thanks <color=#60B2D7><b>Al</b></color>! Let's take a look around the
+    store for clues!
   - I bid you good luck in your search of your son, Todd! Oh, also  if you happen
     to drop by <color=#509D69><b>Bear Necessi-Teas Cafe</b></color> next door, please
     help me pass the antique coffee grinder to <color=#60B2D7><b>Gawain</b></color>!
