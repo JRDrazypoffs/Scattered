@@ -10,12 +10,22 @@ public class GuidePanelManager : MonoBehaviour
     public GameObject BackBtn;
     public GameObject PlayBtn;
 
+    public GameObject HelpPanel;
+
     private int SlideIndex;
 
     
     // Start is called before the first frame update
     void Start()
     {
+        int CurrentLevel = PlayerPrefs.GetInt("Reached Index");
+
+        if(CurrentLevel == 0){
+            HelpPanel.SetActive(true);
+        }else{
+            HelpPanel.SetActive(false);
+        }
+
         for (int i = 0; i < Slides.Length; i++){
             Slides[i].gameObject.SetActive(false);
             if(i==0){

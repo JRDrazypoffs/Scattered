@@ -10650,6 +10650,7 @@ MonoBehaviour:
   NextBtn: {fileID: 1760179393}
   BackBtn: {fileID: 1376657886}
   PlayBtn: {fileID: 1622556664}
+  HelpPanel: {fileID: 922120439}
 --- !u!114 &1313170676 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3517187548578293971, guid: f693a453c2e7ced48be81618191de116, type: 3}
