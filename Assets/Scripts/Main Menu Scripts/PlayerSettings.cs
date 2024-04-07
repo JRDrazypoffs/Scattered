@@ -247,8 +247,8 @@ public class PlayerSettings : MonoBehaviour
         WarningText="";
 
         // Define the regex pattern
-        string pattern = @"^[a-zA-Z0-9@\-_\. ]+$";                  //check if alphanumerals, with @ . - _ characters
-        string pattern2 = @"^[0-9@\-_\. ]+$";                       //check if no alphabets and is only 1 character
+        string pattern = @"^[a-zA-Z0-9@\-_\. ]+$";                  // check if alphanumerals, with @ . - _ characters
+        string pattern2 = @"^[0-9@\-_\. ]+$";                       // check if no alphabets and is only 1 character
         string pattern3 = @"^[^a-zA-Z]*([a-zA-Z][^a-zA-Z]*){0,1}$"; // Username must contain one alphabetic characters or fewer
 
 
