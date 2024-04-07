@@ -34,6 +34,15 @@ public class PlayerSettings : MonoBehaviour
     private int TempResolutionIndex;
     private int TempIsFullscreen;
 
+    // Buffer variables
+    private float BufferMasterVolume;
+    private float BufferBGMVolume;
+    private float BufferSFXVolume;
+    private int BufferDifficultyIndex;
+    private int BufferQualityIndex;
+    private int BufferResolutionIndex;
+    private int BufferIsFullscreen;
+
     // Start is called before the first frame update
     void Start(){
         // Resolution Setting
@@ -45,6 +54,14 @@ public class PlayerSettings : MonoBehaviour
         List<string> options = new List<string>();
 
         int currentResolutionIndex = 0;
+
+        BufferMasterVolume    = PlayerPrefs.GetFloat("Player Pref Master Volume");
+        BufferBGMVolume       = PlayerPrefs.GetFloat("Player Pref BGM Volume");
+        BufferSFXVolume       = PlayerPrefs.GetFloat("Player Pref SFX Volume");
+        BufferDifficultyIndex = PlayerPrefs.GetInt("Player Pref Difficulty");
+        BufferQualityIndex    = PlayerPrefs.GetInt("Player Pref Graphic QI");
+        BufferResolutionIndex = PlayerPrefs.GetInt("Player Pref Resolution Index");
+        BufferIsFullscreen    = PlayerPrefs.GetInt("Player Pref IsFullscreen");
 
         // Processing the resolutions obtained fromd evice into arrays to display as dropdown options.
         for(int i = 0; i < resolutions.Length; i++){
@@ -212,6 +229,18 @@ public class PlayerSettings : MonoBehaviour
         TempQualityIndex = 0;
         TempResolutionIndex = 0;
         TempIsFullscreen = 0;
+    }
+
+    public void RevertData(){
+        PlayerPrefs.SetString("Player Pref Username",UsernameInput.text);
+        PlayerPrefs.SetFloat("Player Pref Master Volume",BufferMasterVolume);
+        PlayerPrefs.SetFloat("Player Pref BGM Volume",BufferBGMVolume);
+        PlayerPrefs.SetFloat("Player Pref SFX Volume",BufferSFXVolume);
+        PlayerPrefs.SetInt("Player Pref Difficulty",BufferDifficultyIndex);
+        PlayerPrefs.SetInt("Player Pref Graphic QI",BufferQualityIndex);
+        PlayerPrefs.SetInt("Player Pref Resolution Index",BufferResolutionIndex);
+        PlayerPrefs.SetInt("Player Pref IsFullscreen",BufferIsFullscreen);
+        PlayerPrefs.Save();
     }
 
     private void LoadData(){
