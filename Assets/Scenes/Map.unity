@@ -9665,6 +9665,8 @@ MonoBehaviour:
   resolutionDropdown: {fileID: 820512036}
   fullscreenToggle: {fileID: 1222635395}
   MasterAudioMixer: {fileID: 24100000, guid: 4e4cb5f9e0952f8488f3fa9b7edafacd, type: 2}
+  SaveBtn: {fileID: 1457447737}
+  WarningTextField: {fileID: 1457447738}
 --- !u!114 &1279035768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11369,6 +11371,28 @@ MonoBehaviour:
   - {fileID: 1271384731}
   - {fileID: 892932790}
   BlockerPanel: {fileID: 1457447735}
+--- !u!114 &1457447737 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6218884269199873432, guid: f693a453c2e7ced48be81618191de116, type: 3}
+  m_PrefabInstance: {fileID: 1457447733}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1457447738 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1824619398073879142, guid: f693a453c2e7ced48be81618191de116, type: 3}
+  m_PrefabInstance: {fileID: 1457447733}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1474207917
 GameObject:
   m_ObjectHideFlags: 0

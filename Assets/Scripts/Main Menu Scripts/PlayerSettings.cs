@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
@@ -26,6 +27,9 @@ public class PlayerSettings : MonoBehaviour
 
     Resolution[] resolutions;
 
+    // Temporary variables. Used when getting new input
+    // Didnt use this for the back button cause it might hold diffrent information when user clicks back btn.
+    private string TempUsername;
     private float TempMasterVolume;
     private float TempBGMVolume;
     private float TempSFXVolume;
@@ -35,6 +39,8 @@ public class PlayerSettings : MonoBehaviour
     private int TempIsFullscreen;
 
     // Buffer variables
+    // to collect the values from player prefs.
+    private string BufferUsername;
     private float BufferMasterVolume;
     private float BufferBGMVolume;
     private float BufferSFXVolume;
@@ -43,8 +49,15 @@ public class PlayerSettings : MonoBehaviour
     private int BufferResolutionIndex;
     private int BufferIsFullscreen;
 
+    // Set warning text variable
+    public Button SaveBtn;
+    public TMP_Text WarningTextField;
+    private string UsernameName;
+    private string WarningText;
+
     // Start is called before the first frame update
     void Start(){
+
         // Resolution Setting
         resolutions = Screen.resolutions;
 
@@ -55,6 +68,8 @@ public class PlayerSettings : MonoBehaviour
 
         int currentResolutionIndex = 0;
 
+        // set buffer to cache previous save data to save if player clicks back
+        BufferUsername        = PlayerPrefs.GetString("Player Pref Username");
         BufferMasterVolume    = PlayerPrefs.GetFloat("Player Pref Master Volume");
         BufferBGMVolume       = PlayerPrefs.GetFloat("Player Pref BGM Volume");
         BufferSFXVolume       = PlayerPrefs.GetFloat("Player Pref SFX Volume");
@@ -62,32 +77,47 @@ public class PlayerSettings : MonoBehaviour
         BufferQualityIndex    = PlayerPrefs.GetInt("Player Pref Graphic QI");
         BufferResolutionIndex = PlayerPrefs.GetInt("Player Pref Resolution Index");
         BufferIsFullscreen    = PlayerPrefs.GetInt("Player Pref IsFullscreen");
+        
+        // Processing the resolutions obtained from device into arrays to display as dropdown options.
 
-        // Processing the resolutions obtained fromd evice into arrays to display as dropdown options.
+        // TODO: Duplicate resolutions in build. Unsure why in build theres duplicated resolutions in dropdown.
+        // the logic is correct and only add to the list once and add new values to dropdown once but this still happens.
+        // only occur in build but not in playground.
+        // might be because of double screens
+
         for(int i = 0; i < resolutions.Length; i++){
             string option = resolutions[i].width + " x " + resolutions[i].height;
             options.Add(option);
-
-            if(resolutions[i].width == Screen.currentResolution.width && 
-            resolutions[i].height == Screen.currentResolution.height){
-                currentResolutionIndex = i;
-            }
         }
-
-        // Set Default resolution as current resolution
         resolutionDropdown.AddOptions(options);
-        resolutionDropdown.value = currentResolutionIndex;
-        resolutionDropdown.RefreshShownValue();
-
         
         // check if user has set settings
         if(PlayerPrefs.HasKey("Settings Has Set")){
             Debug.Log("you have all settings data stored");
             LoadData();
         }else{
+            for(int i = 0; i < resolutions.Length; i++){
+                string option = resolutions[i].width + " x " + resolutions[i].height;
+                options.Add(option);
+
+                if(resolutions[i].width == Screen.currentResolution.width && 
+                resolutions[i].height == Screen.currentResolution.height){
+                    currentResolutionIndex = i;
+                }
+            }
+            // Set Default resolution as current resolution
+            resolutionDropdown.AddOptions(options);
+            resolutionDropdown.value = currentResolutionIndex;
+            resolutionDropdown.RefreshShownValue();
+
             Debug.Log("please set your settings");
         }
+    }
 
+    void Update(){
+        WarningTextField.text = WarningText;
+        UsernameName = UsernameInput.text;
+        ValidateUsername();
     }
 
     public void SetMasterVolume(float MasterVolume){
@@ -163,22 +193,26 @@ public class PlayerSettings : MonoBehaviour
     }
 
     public void SetResolution(int resolutionIndex){
-        if (PlayerPrefs.HasKey("Settings Has Set")){
+        if (PlayerPrefs.HasKey("Settings Has Set")){            
             // preset to previous saved field
             resolutionDropdown.value = TempResolutionIndex;
-            Resolution resolution = resolutions[resolutionIndex];
-            Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+            // Resolution resolution = resolutions[resolutionIndex];
+            // Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+
             // Allow user edit field
-            resolution = resolutions[resolutionIndex];
-            Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+            // resolution = resolutions[resolutionIndex];
+            // Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+            Screen.SetResolution(resolutions[resolutionIndex].width, resolutions[resolutionIndex].height, Screen.fullScreen);
             TempResolutionIndex = resolutionIndex;
+
             // change the value when value changed
             resolutionDropdown.value = TempResolutionIndex;
             resolutionDropdown.RefreshShownValue();
         }else{
-            Resolution resolution = resolutions[resolutionIndex];
-            Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+            // Resolution resolution = resolutions[resolutionIndex];
+            // Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
             TempResolutionIndex = resolutionIndex;
+            resolutionDropdown.RefreshShownValue();
         }
     }
 
@@ -209,7 +243,38 @@ public class PlayerSettings : MonoBehaviour
         }
     }
 
+    void ValidateUsername(){
+        WarningText="";
+
+        // Define the regex pattern
+        string pattern = @"^[a-zA-Z0-9@\-_\. ]+$";                  //check if alphanumerals, with @ . - _ characters
+        string pattern2 = @"^[0-9@\-_\. ]+$";                       //check if no alphabets and is only 1 character
+        string pattern3 = @"^[^a-zA-Z]*([a-zA-Z][^a-zA-Z]*){0,1}$"; // Username must contain one alphabetic characters or fewer
+
+
+        // Use the Matches method to find matches in the input string
+        bool isMatch = Regex.IsMatch(UsernameName, pattern);
+        bool isMatch2 = Regex.IsMatch(UsernameName, pattern2);
+        bool isMatch3 = Regex.IsMatch(UsernameName, pattern3);
+        
+
+        if(UsernameName == ""){
+            WarningText="Username is empty!";
+            SaveBtn.interactable = false;
+        }else if( !isMatch ){
+            WarningText = "Username contains illegal characters!";
+            SaveBtn.interactable = false;
+        }else if(isMatch2||isMatch3){
+            WarningText="Enter a valid name!";
+            SaveBtn.interactable = false;
+        }else{
+            WarningText = "";
+            SaveBtn.interactable = true;
+        }
+    }
+
     public void SaveData(){
+
         PlayerPrefs.SetString("Player Pref Username",UsernameInput.text);
         PlayerPrefs.SetFloat("Player Pref Master Volume",TempMasterVolume);
         PlayerPrefs.SetFloat("Player Pref BGM Volume",TempBGMVolume);
@@ -229,10 +294,14 @@ public class PlayerSettings : MonoBehaviour
         TempQualityIndex = 0;
         TempResolutionIndex = 0;
         TempIsFullscreen = 0;
+        
+        Start();
     }
 
     public void RevertData(){
-        PlayerPrefs.SetString("Player Pref Username",UsernameInput.text);
+        // if player already clicked save then dont save the buffer values 
+        // when they open the save and clicked back
+        PlayerPrefs.SetString("Player Pref Username",BufferUsername);
         PlayerPrefs.SetFloat("Player Pref Master Volume",BufferMasterVolume);
         PlayerPrefs.SetFloat("Player Pref BGM Volume",BufferBGMVolume);
         PlayerPrefs.SetFloat("Player Pref SFX Volume",BufferSFXVolume);
@@ -240,13 +309,16 @@ public class PlayerSettings : MonoBehaviour
         PlayerPrefs.SetInt("Player Pref Graphic QI",BufferQualityIndex);
         PlayerPrefs.SetInt("Player Pref Resolution Index",BufferResolutionIndex);
         PlayerPrefs.SetInt("Player Pref IsFullscreen",BufferIsFullscreen);
+        PlayerPrefs.SetInt("Settings Has Set",1);
         PlayerPrefs.Save();
+
+        Start();
     }
 
     private void LoadData(){
         bool toggleState;
-        string Username     = PlayerPrefs.GetString("Player Pref Username");
-        UsernameInput.text = Username;
+        TempUsername     = PlayerPrefs.GetString("Player Pref Username");
+        UsernameInput.text = TempUsername;
 
         TempMasterVolume    = PlayerPrefs.GetFloat("Player Pref Master Volume");
         TempBGMVolume       = PlayerPrefs.GetFloat("Player Pref BGM Volume");
@@ -261,15 +333,6 @@ public class PlayerSettings : MonoBehaviour
         }else{
             toggleState=false;
         }
-
-        // Debug.Log("Master Vol: "+TempMasterVolume);
-        // Debug.Log("BGM Vol: "+TempBGMVolume);
-        // Debug.Log("SFX Vol: "+TempSFXVolume);
-        // Debug.Log("Username: "+Username);
-        // Debug.Log("Difficulty Index: "+TempDifficultyIndex);
-        // Debug.Log("Graphic Index: "+TempQualityIndex);
-        // Debug.Log("Resolution Index: "+TempResolutionIndex);
-        // Debug.Log("Fullscreen: "+TempIsFullscreen);
 
         SetMasterVolume(TempMasterVolume);
         SetBGMVolume(TempBGMVolume);
