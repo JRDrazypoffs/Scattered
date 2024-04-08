@@ -83,7 +83,7 @@ public class PlayerSettings : MonoBehaviour
         // TODO: Duplicate resolutions in build. Unsure why in build theres duplicated resolutions in dropdown.
         // the logic is correct and only add to the list once and add new values to dropdown once but this still happens.
         // only occur in build but not in playground.
-        // might be because of double screens
+        // might be because of double screens - checked, it is not
 
         for(int i = 0; i < resolutions.Length; i++){
             string option = resolutions[i].width + " x " + resolutions[i].height;
