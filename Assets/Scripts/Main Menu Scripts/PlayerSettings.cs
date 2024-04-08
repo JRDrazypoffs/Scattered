@@ -80,17 +80,11 @@ public class PlayerSettings : MonoBehaviour
         BufferIsFullscreen    = PlayerPrefs.GetInt("Player Pref IsFullscreen");
         
         // Processing the resolutions obtained from device into arrays to display as dropdown options.
-
-        // TODO: Duplicate resolutions in build. Unsure why in build theres duplicated resolutions in dropdown.
-        // the logic is correct and only add to the list once and add new values to dropdown once but this still happens.
-        // only occur in build but not in playground.
-        // might be because of double screens - checked, it is not
-
         for(int i = 0; i < resolutions.Length; i++){
             string option = resolutions[i].width + " x " + resolutions[i].height;
             options.Add(option);
         }
-        options = options.Distinct().ToList();
+        options = options.Distinct().ToList();//remove duplicate resolutions
         resolutionDropdown.AddOptions(options);
         
         // check if user has set settings
@@ -108,7 +102,7 @@ public class PlayerSettings : MonoBehaviour
                 }
             }
             // Set Default resolution as current resolution
-            options = options.Distinct().ToList();
+            options = options.Distinct().ToList();//remove duplicate resolutions
             resolutionDropdown.AddOptions(options);
             resolutionDropdown.value = currentResolutionIndex;
             resolutionDropdown.RefreshShownValue();
