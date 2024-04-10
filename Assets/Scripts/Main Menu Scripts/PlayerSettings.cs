@@ -94,8 +94,8 @@ public class PlayerSettings : MonoBehaviour
             LoadData();
         }else{
             for(int i = 0; i < resolutions.Length; i++){
-                string option = resolutions[i].width + " x " + resolutions[i].height;
-                options.Add(option);
+                // string option = resolutions[i].width + " x " + resolutions[i].height;
+                // options.Add(option);
 
                 if(resolutions[i].width == Screen.currentResolution.width && 
                 resolutions[i].height == Screen.currentResolution.height){
@@ -105,7 +105,7 @@ public class PlayerSettings : MonoBehaviour
             // Set Default resolution as current resolution
             // this solution for some reason cause the dropdown to become bugged
             // options = options.Distinct().ToList();//remove duplicate resolutions
-            resolutionDropdown.AddOptions(options);
+            // resolutionDropdown.AddOptions(options);
             resolutionDropdown.value = currentResolutionIndex;
             resolutionDropdown.RefreshShownValue();
 
