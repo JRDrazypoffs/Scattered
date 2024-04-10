@@ -22,7 +22,7 @@ public class BGChanger : MonoBehaviour
     }
 
     void ChangeBG(){
-        if(CurrentLevel >= 9 ){
+        if(CurrentLevel >= 10 ){
             SearchBG.SetActive(false);
             HugBG.SetActive(true);
         }else{
