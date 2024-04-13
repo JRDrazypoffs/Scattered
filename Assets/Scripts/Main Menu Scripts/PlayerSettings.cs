@@ -56,6 +56,8 @@ public class PlayerSettings : MonoBehaviour
     private string UsernameName;
     private string WarningText;
 
+    // private string[] resoArray;
+
     // Start is called before the first frame update
     void Start(){
 
@@ -82,8 +84,9 @@ public class PlayerSettings : MonoBehaviour
         // Processing the resolutions obtained from device into arrays to display as dropdown options.
         for(int i = 0; i < resolutions.Length; i++){
             string option = resolutions[i].width + " x " + resolutions[i].height;
-            Debug.Log("Option "+i+" "+option);
+            // Debug.Log("Option "+i+" "+option);
             options.Add(option);
+            // resoArray[i]=option;
         }
 
         // for(int i = 0; i < resolutions.Length; i++){
