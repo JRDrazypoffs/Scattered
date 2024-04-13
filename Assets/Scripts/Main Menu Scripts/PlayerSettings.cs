@@ -82,8 +82,16 @@ public class PlayerSettings : MonoBehaviour
         // Processing the resolutions obtained from device into arrays to display as dropdown options.
         for(int i = 0; i < resolutions.Length; i++){
             string option = resolutions[i].width + " x " + resolutions[i].height;
+            Debug.Log("Option "+i+" "+option);
             options.Add(option);
         }
+
+        // for(int i = 0; i < resolutions.Length; i++){
+        //     Debug.Log("In Set Start Function");
+        //     Debug.Log(options[i]);
+        //     Debug.Log("Total Resolutions in Options ="+options.Count);
+        // }
+
         // this solution  for some reason cause the dropdown to become bugged
         // options = options.Distinct().ToList();//remove duplicate resolutions
         resolutionDropdown.AddOptions(options);
@@ -192,7 +200,14 @@ public class PlayerSettings : MonoBehaviour
     }
 
     public void SetResolution(int resolutionIndex){
-        if (PlayerPrefs.HasKey("Settings Has Set")){            
+        if (PlayerPrefs.HasKey("Settings Has Set")){         
+            // for(int i = 0; i < resolutions.Length; i++){
+            //     Debug.Log("In Set Resolutions Function");
+            //     Debug.Log("In Set Resolutions Resolution Index "+i+" "+resolutions[i]);
+            //     Debug.Log("Total Resolutions ="+resolutions.Length);
+
+            // }
+
             // preset to previous saved field
             resolutionDropdown.value = TempResolutionIndex;
             // Resolution resolution = resolutions[resolutionIndex];

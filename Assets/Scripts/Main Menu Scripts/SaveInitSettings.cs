@@ -9,7 +9,7 @@ using TMPro;
 public class SaveInitSettings : MonoBehaviour
 {
 
-    Resolution[] resolutions;
+    Resolution[] resolutionsStart;
 
     [SerializeField] TMP_InputField UsernameInput;
     public TMP_Dropdown difficultyDropdown;
@@ -26,12 +26,12 @@ public class SaveInitSettings : MonoBehaviour
     private string WarningText;
     
     void Start(){
-        resolutions = Screen.resolutions;
-        for(int i = 0; i < resolutions.Length; i++){
-            string option = resolutions[i].width + " x " + resolutions[i].height;
+        resolutionsStart = Screen.resolutions;
+        for(int i = 0; i < resolutionsStart.Length; i++){
+            // string option = resolutions[i].width + " x " + resolutions[i].height;
 
-            if(resolutions[i].width == Screen.currentResolution.width && 
-            resolutions[i].height == Screen.currentResolution.height){
+            if(resolutionsStart[i].width == Screen.currentResolution.width && 
+            resolutionsStart[i].height == Screen.currentResolution.height){
                 TempResolutionIndex = i;
             }
         }
