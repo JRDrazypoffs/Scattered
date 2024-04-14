@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 13008401}
   - component: {fileID: 13008400}
   - component: {fileID: 13008399}
+  - component: {fileID: 13008402}
   m_Layer: 6
   m_Name: Central Park
   m_TagString: Untagged
@@ -267,6 +268,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 13008397}
   m_CullTransparentMesh: 1
+--- !u!95 &13008402
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13008397}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 104f7ebc6af9f1a42a0c25807d57fa2b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &29535983
 GameObject:
   m_ObjectHideFlags: 0
@@ -2257,6 +2279,7 @@ GameObject:
   - component: {fileID: 408108653}
   - component: {fileID: 408108652}
   - component: {fileID: 408108651}
+  - component: {fileID: 408108654}
   m_Layer: 6
   m_Name: Antique Store
   m_TagString: Untagged
@@ -2389,6 +2412,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 408108649}
   m_CullTransparentMesh: 1
+--- !u!95 &408108654
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408108649}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 104f7ebc6af9f1a42a0c25807d57fa2b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &431705190
 GameObject:
   m_ObjectHideFlags: 0
@@ -3141,6 +3185,7 @@ GameObject:
   - component: {fileID: 503563506}
   - component: {fileID: 503563505}
   - component: {fileID: 503563504}
+  - component: {fileID: 503563507}
   m_Layer: 6
   m_Name: Museum
   m_TagString: Untagged
@@ -3273,6 +3318,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 503563502}
   m_CullTransparentMesh: 1
+--- !u!95 &503563507
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503563502}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 104f7ebc6af9f1a42a0c25807d57fa2b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &503737978
 GameObject:
   m_ObjectHideFlags: 0
@@ -4646,6 +4712,7 @@ GameObject:
   - component: {fileID: 668410254}
   - component: {fileID: 668410253}
   - component: {fileID: 668410252}
+  - component: {fileID: 668410255}
   m_Layer: 6
   m_Name: Campsite
   m_TagString: Untagged
@@ -4778,6 +4845,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 668410250}
   m_CullTransparentMesh: 1
+--- !u!95 &668410255
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668410250}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 104f7ebc6af9f1a42a0c25807d57fa2b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &671737221
 GameObject:
   m_ObjectHideFlags: 0
@@ -4790,6 +4878,7 @@ GameObject:
   - component: {fileID: 671737225}
   - component: {fileID: 671737224}
   - component: {fileID: 671737223}
+  - component: {fileID: 671737226}
   m_Layer: 6
   m_Name: Beach
   m_TagString: Untagged
@@ -4922,6 +5011,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 671737221}
   m_CullTransparentMesh: 1
+--- !u!95 &671737226
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671737221}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 104f7ebc6af9f1a42a0c25807d57fa2b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &681131338
 GameObject:
   m_ObjectHideFlags: 0
@@ -4934,6 +5044,7 @@ GameObject:
   - component: {fileID: 681131342}
   - component: {fileID: 681131341}
   - component: {fileID: 681131340}
+  - component: {fileID: 681131343}
   m_Layer: 6
   m_Name: Library
   m_TagString: Untagged
@@ -5066,6 +5177,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 681131338}
   m_CullTransparentMesh: 1
+--- !u!95 &681131343
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681131338}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 104f7ebc6af9f1a42a0c25807d57fa2b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &686666648
 GameObject:
   m_ObjectHideFlags: 0
@@ -13713,6 +13845,7 @@ GameObject:
   - component: {fileID: 1634486017}
   - component: {fileID: 1634486018}
   - component: {fileID: 1634486019}
+  - component: {fileID: 1634486020}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -13857,6 +13990,26 @@ MonoBehaviour:
   - {fileID: 1593035621}
   - {fileID: 1474207917}
   - {fileID: 849990158}
+--- !u!114 &1634486020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634486012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29864434540dd2343b535b568d0b3a68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BuildingBtns:
+  - {fileID: 408108649}
+  - {fileID: 2034319206}
+  - {fileID: 503563502}
+  - {fileID: 681131338}
+  - {fileID: 13008397}
+  - {fileID: 671737221}
+  - {fileID: 668410250}
 --- !u!1 &1641573045
 GameObject:
   m_ObjectHideFlags: 0
@@ -16548,6 +16701,7 @@ GameObject:
   - component: {fileID: 2034319210}
   - component: {fileID: 2034319209}
   - component: {fileID: 2034319208}
+  - component: {fileID: 2034319211}
   m_Layer: 6
   m_Name: Cafe
   m_TagString: Untagged
@@ -16680,6 +16834,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2034319206}
   m_CullTransparentMesh: 1
+--- !u!95 &2034319211
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034319206}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 104f7ebc6af9f1a42a0c25807d57fa2b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2049812181
 GameObject:
   m_ObjectHideFlags: 0
