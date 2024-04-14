@@ -2160,7 +2160,7 @@ MonoBehaviour:
   BGGlow: {fileID: 1952724423}
   BGEnd: {fileID: 1875875264}
   DelayGlowBGTriggerBySecs: 13
-  DelayEndBGTriggerBySecs: 141
+  DelayEndBGTriggerBySecs: 142
 --- !u!1 &1022272647
 GameObject:
   m_ObjectHideFlags: 0
