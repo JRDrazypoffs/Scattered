@@ -9715,7 +9715,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: pixabay & KSHMR
+  m_text: 'pixabay
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f1f09eaf0cd87194c95e4df28a7a508c, type: 2}
   m_sharedMaterial: {fileID: 5742468250113575934, guid: f1f09eaf0cd87194c95e4df28a7a508c, type: 2}
