@@ -347,8 +347,12 @@ public class PlayerSettings : MonoBehaviour
 
         if(TempIsFullscreen == 1){
             toggleState=true;
+            fullscreenToggle.isOn = true;
+
         }else{
             toggleState=false;
+            fullscreenToggle.isOn = false;
+
         }
 
         SetMasterVolume(TempMasterVolume);
