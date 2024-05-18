@@ -2232,7 +2232,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000005722, y: -521.48926}
+  m_AnchoredPosition: {x: 3.045, y: -523.53284}
   m_SizeDelta: {x: 760, y: 1405.5908}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &284940439
@@ -3324,8 +3324,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2069030479}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.74347353, y: 0}
-  m_AnchorMax: {x: 0.9985478, y: 1}
+  m_AnchorMin: {x: 0.74492854, y: 0}
+  m_AnchorMax: {x: 0.99999976, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -6275,7 +6275,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Main menu & ending sequence backgrounds
+  m_text: Main menu, ending scene & hidden object area scene backgrounds
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 43f73ae4020645f468339d0976566f39, type: 2}
   m_sharedMaterial: {fileID: 7888502488835759401, guid: 43f73ae4020645f468339d0976566f39, type: 2}
@@ -7921,8 +7921,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 371.04984, y: -2.7188}
-  m_SizeDelta: {x: 380, y: 10}
+  m_AnchoredPosition: {x: 367.7, y: 21.5}
+  m_SizeDelta: {x: 340, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1592943802
 MonoBehaviour:
@@ -7967,8 +7967,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 664539421}
   m_HandleRect: {fileID: 664539420}
   m_Direction: 0
-  m_Value: 0.9980506
-  m_Size: 0.25507426
+  m_Value: 1.0000023
+  m_Size: 0.2550719
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -10327,9 +10327,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "This project is submitted in partial fulfilment of the requirements for
-    the degree of Bachelor of Computer Science with Honours from the Faculty of Computer
-    Science and Information Technology, \nUNIVERSITI MALAYSIA SARAWAK\r\n"
+  m_text: "<b>Note</b>: This project is submitted in partial fulfilment of the requirements
+    for the degree of Bachelor of Computer Science with Honours from the Faculty
+    of Computer Science and Information Technology, \nUNIVERSITI MALAYSIA SARAWAK\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f1f09eaf0cd87194c95e4df28a7a508c, type: 2}
   m_sharedMaterial: {fileID: 5742468250113575934, guid: f1f09eaf0cd87194c95e4df28a7a508c, type: 2}
