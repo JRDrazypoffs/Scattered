@@ -4,9 +4,8 @@ using System;
 
 /// <summary>
 /// This script adds a "PopIn" animation when this UI gameobject is enabled.
-/// Created by: Adam Chandler
 /// NOTES: This gameObject needs 1,1,1 scale in order to work properly. Attach to
-/// any UI GameObject and it will animate in on Enable
+/// any UI GameObject and it will animate in on Enable (See more from Adam Chandler's tutorials)
 /// </summary>
 
 [RequireComponent(typeof(RectTransform))]
