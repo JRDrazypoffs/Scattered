@@ -256,10 +256,10 @@ public class PlayerSettings : MonoBehaviour
             // preset to previous saved field
             if(TempIsFullscreen == 1){
                 Screen.fullScreen = true;
-                fullscreenToggle.isOn = true;
+                // fullscreenToggle.isOn = true;
             }else{
                 Screen.fullScreen = false;
-                fullscreenToggle.isOn = false;
+                // fullscreenToggle.isOn = false;
             }
             // Allow user edit field
             Screen.fullScreen = IsFullscreen;
@@ -385,7 +385,7 @@ public class PlayerSettings : MonoBehaviour
         SetGraphicsQuality(TempQualityIndex);
         SetResolution(TempResolutionIndex);
         SetFullscreen(toggleState);
-        // fullscreenToggle.isOn = toggleState;//preset the fullsecreen toggle
+        fullscreenToggle.isOn = toggleState;//preset the fullsecreen toggle
 
     }
 
