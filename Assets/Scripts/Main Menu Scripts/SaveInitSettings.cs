@@ -63,15 +63,16 @@ public class SaveInitSettings : MonoBehaviour
     }
 
     public void SaveInitData(){
-
-        PlayerPrefs.SetString("Player Pref Username",UsernameInput.text);
-        PlayerPrefs.SetInt("Player Pref Difficulty",difficultyDropdown.value);
         
         if (SettingsInitWasSet==false){
             // preset settings if no settings was initially set
+            PlayerPrefs.SetString("Player Pref Username",UsernameInput.text);
+            PlayerPrefs.SetInt("Player Pref Difficulty",difficultyDropdown.value);
             PlayerPrefs.SetInt("Player Pref Resolution Index",TempResolutionIndex);
             PlayerPrefs.SetInt("Player Pref IsFullscreen",1);
         }else{
+            PlayerPrefs.SetString("Player Pref Username",UsernameInput.text);
+            PlayerPrefs.SetInt("Player Pref Difficulty",difficultyDropdown.value);
             PlayerPrefs.SetFloat("Player Pref Master Volume",PlayerPrefs.GetFloat("Player Pref Master Volume"));
             PlayerPrefs.SetFloat("Player Pref BGM Volume",PlayerPrefs.GetFloat("Player Pref BGM Volume"));
             PlayerPrefs.SetFloat("Player Pref SFX Volume",PlayerPrefs.GetFloat("Player Pref SFX Volume"));

@@ -15,6 +15,8 @@ public class MainMenu : MonoBehaviour
     public void StartNewGame(){
         // PlayerPrefs.DeleteAll();
         PlayerPrefs.DeleteKey("Settings Has Set");
+        PlayerPrefs.DeleteKey("Unlocked Levels");
+        PlayerPrefs.DeleteKey("Reached Index");
         SceneManager.LoadSceneAsync("Start New Game Menu");
     }
 
