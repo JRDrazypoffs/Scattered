@@ -5,6 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class ClickControl : MonoBehaviour
 {
@@ -21,7 +22,10 @@ public class ClickControl : MonoBehaviour
         ObjectName = gameObject.name;
         // Debug.Log (ObjectName);
         Destroy (gameObject);
-        Destroy (ObjectNameText);
+        // Destroy (ObjectNameText);
+        // ObjectNameText.GetComponent<Animator>().Play("DimItemLabel");
+        ObjectNameText.GetComponent<Animator>().cullingMode=0;
+        ObjectNameText.GetComponent<Button>().enabled=false;
         FoundSound.Play ();
         Instantiate(SuccessClick, HiddenObjectPos.position, SuccessClick.rotation);
     }

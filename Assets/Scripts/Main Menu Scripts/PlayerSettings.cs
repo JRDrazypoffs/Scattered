@@ -128,6 +128,12 @@ public class PlayerSettings : MonoBehaviour
         WarningTextField.text = WarningText;
         UsernameName = UsernameInput.text;
         ValidateUsername();
+
+        // if(TempIsFullscreen == 1){
+        //     fullscreenToggle.isOn=true;
+        // }else{
+        //     fullscreenToggle.isOn=false;
+        // }
     }
 
     public void SetMasterVolume(float MasterVolume){
@@ -238,16 +244,20 @@ public class PlayerSettings : MonoBehaviour
             // preset to previous saved field
             if(TempIsFullscreen == 1){
                 Screen.fullScreen = true;
+                fullscreenToggle.isOn = true;
             }else{
                 Screen.fullScreen = false;
+                fullscreenToggle.isOn = false;
             }
             // Allow user edit field
             Screen.fullScreen = IsFullscreen;
             // convert bool to int cause playerpref cannot set int
             if(IsFullscreen==true){
                 TempIsFullscreen = 1;
+                // fullscreenToggle.isOn = true;
             }else{
                 TempIsFullscreen = 0;
+                // fullscreenToggle.isOn = false;
             }
         }else{
             Screen.fullScreen = IsFullscreen;
@@ -310,7 +320,7 @@ public class PlayerSettings : MonoBehaviour
         TempDifficultyIndex = 0;
         TempQualityIndex = 0;
         TempResolutionIndex = 0;
-        TempIsFullscreen = 0;
+        // TempIsFullscreen = 0;
         
         Start();
     }
@@ -347,12 +357,8 @@ public class PlayerSettings : MonoBehaviour
 
         if(TempIsFullscreen == 1){
             toggleState=true;
-            fullscreenToggle.isOn = true;
-
         }else{
             toggleState=false;
-            fullscreenToggle.isOn = false;
-
         }
 
         SetMasterVolume(TempMasterVolume);
@@ -362,6 +368,8 @@ public class PlayerSettings : MonoBehaviour
         SetGraphicsQuality(TempQualityIndex);
         SetResolution(TempResolutionIndex);
         SetFullscreen(toggleState);
+        // fullscreenToggle.isOn = toggleState;//preset the fullsecreen toggle
+
     }
 
     public void DeleteData(){
