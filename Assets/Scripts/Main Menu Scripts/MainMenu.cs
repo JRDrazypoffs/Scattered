@@ -13,7 +13,8 @@ public class MainMenu : MonoBehaviour
     }
 
     public void StartNewGame(){
-        PlayerPrefs.DeleteAll();
+        // PlayerPrefs.DeleteAll();
+        PlayerPrefs.DeleteKey("Settings Has Set");
         SceneManager.LoadSceneAsync("Start New Game Menu");
     }
 

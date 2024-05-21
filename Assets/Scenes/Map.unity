@@ -2146,7 +2146,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3692416546648791438, guid: f693a453c2e7ced48be81618191de116, type: 3}
   m_PrefabInstance: {fileID: 1457447733}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 706981049}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
@@ -5571,6 +5571,11 @@ MonoBehaviour:
   Sign: {fileID: 1186518275}
   signAnimator: {fileID: 1186518280}
   PopSound: {fileID: 839363611}
+--- !u!1 &706981049 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 112351196191747690, guid: f693a453c2e7ced48be81618191de116, type: 3}
+  m_PrefabInstance: {fileID: 1457447733}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &727402821
 GameObject:
   m_ObjectHideFlags: 0
@@ -8042,6 +8047,11 @@ Transform:
   - {fileID: 870960191}
   m_Father: {fileID: 1634486016}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &935346083 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3207871095545309492, guid: f693a453c2e7ced48be81618191de116, type: 3}
+  m_PrefabInstance: {fileID: 1457447733}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &944404809
 GameObject:
   m_ObjectHideFlags: 0
@@ -10711,6 +10721,10 @@ MonoBehaviour:
   MasterAudioMixer: {fileID: 24100000, guid: 4e4cb5f9e0952f8488f3fa9b7edafacd, type: 2}
   SaveBtn: {fileID: 1457447737}
   WarningTextField: {fileID: 1457447738}
+  usernameLabel: {fileID: 1860653613}
+  usernameInput_: {fileID: 706981049}
+  difficultyLabel: {fileID: 935346083}
+  difficultyDropdown_: {fileID: 935346083}
 --- !u!114 &1279035768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15871,6 +15885,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1850095289}
   m_CullTransparentMesh: 1
+--- !u!1 &1860653613 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8984658727335639020, guid: f693a453c2e7ced48be81618191de116, type: 3}
+  m_PrefabInstance: {fileID: 1457447733}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1864035338
 GameObject:
   m_ObjectHideFlags: 0
@@ -16683,7 +16702,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2881631828060053202, guid: f693a453c2e7ced48be81618191de116, type: 3}
   m_PrefabInstance: {fileID: 1457447733}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 935346083}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b743370ac3e4ec2a1668f5455a8ef8a, type: 3}

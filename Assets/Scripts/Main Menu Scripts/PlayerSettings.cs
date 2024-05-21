@@ -58,6 +58,12 @@ public class PlayerSettings : MonoBehaviour
 
     // private string[] resoArray;
 
+    // to enable save button if username label is disabled
+    public GameObject usernameLabel;
+    public GameObject usernameInput_;
+    public GameObject difficultyLabel;
+    public GameObject difficultyDropdown_;
+
     // Start is called before the first frame update
     void Start(){
 
@@ -100,7 +106,7 @@ public class PlayerSettings : MonoBehaviour
         resolutionDropdown.AddOptions(options);
         
         // check if user has set settings
-        if(PlayerPrefs.HasKey("Settings Has Set")){
+        if(PlayerPrefs.HasKey("Settings Init Was Set")){
             Debug.Log("you have all settings data stored");
             LoadData();
         }else{
@@ -129,15 +135,21 @@ public class PlayerSettings : MonoBehaviour
         UsernameName = UsernameInput.text;
         ValidateUsername();
 
-        // if(TempIsFullscreen == 1){
-        //     fullscreenToggle.isOn=true;
-        // }else{
-        //     fullscreenToggle.isOn=false;
-        // }
+        if(!PlayerPrefs.HasKey("Settings Has Set")){
+            usernameLabel.SetActive(false);
+            usernameInput_.SetActive(false);
+            difficultyLabel.SetActive(false);
+            difficultyDropdown_.SetActive(false);
+        }else{
+            usernameLabel.SetActive(true);
+            usernameInput_.SetActive(true);
+            difficultyLabel.SetActive(true);
+            difficultyDropdown_.SetActive(true);
+        }
     }
 
     public void SetMasterVolume(float MasterVolume){
-        if (PlayerPrefs.HasKey("Settings Has Set")){
+        if (PlayerPrefs.HasKey("Settings Init Was Set")){
             // preset field
             masterSlider.value = TempMasterVolume;
             MasterAudioMixer.SetFloat("MasterVolume", TempMasterVolume);
@@ -151,7 +163,7 @@ public class PlayerSettings : MonoBehaviour
     }
 
     public void SetBGMVolume(float BGMVolume){
-        if (PlayerPrefs.HasKey("Settings Has Set")){
+        if (PlayerPrefs.HasKey("Settings Init Was Set")){
             // preset field
             bgmSlider.value = TempBGMVolume;
             MasterAudioMixer.SetFloat("BGMVolume", TempBGMVolume);
@@ -165,7 +177,7 @@ public class PlayerSettings : MonoBehaviour
     }
 
     public void SetSFXVolume(float SFXVolume){
-        if (PlayerPrefs.HasKey("Settings Has Set")){
+        if (PlayerPrefs.HasKey("Settings Init Was Set")){
             // preset field
             sfxSlider.value = TempSFXVolume;
             MasterAudioMixer.SetFloat("SFXVolume", TempSFXVolume);
@@ -179,7 +191,7 @@ public class PlayerSettings : MonoBehaviour
     }
 
     public void SetDifficulty(int DifficultyIndex){
-        if (PlayerPrefs.HasKey("Settings Has Set")){
+        if (PlayerPrefs.HasKey("Settings Init Was Set")){
             // preset field
             difficultyDropdown.value = TempDifficultyIndex;
             // allow edit
@@ -193,7 +205,7 @@ public class PlayerSettings : MonoBehaviour
     }
 
     public void SetGraphicsQuality(int QualityIndex){
-        if (PlayerPrefs.HasKey("Settings Has Set")){
+        if (PlayerPrefs.HasKey("Settings Init Was Set")){
             // preset field
             graphicsDropdown.value = TempQualityIndex;
             // allow edit
@@ -209,7 +221,7 @@ public class PlayerSettings : MonoBehaviour
     }
 
     public void SetResolution(int resolutionIndex){
-        if (PlayerPrefs.HasKey("Settings Has Set")){         
+        if (PlayerPrefs.HasKey("Settings Init Was Set")){         
             // for(int i = 0; i < resolutions.Length; i++){
             //     Debug.Log("In Set Resolutions Function");
             //     Debug.Log("In Set Resolutions Resolution Index "+i+" "+resolutions[i]);
@@ -240,7 +252,7 @@ public class PlayerSettings : MonoBehaviour
     }
 
     public void SetFullscreen(bool IsFullscreen){
-        if (PlayerPrefs.HasKey("Settings Has Set")){
+        if (PlayerPrefs.HasKey("Settings Init Was Set")){
             // preset to previous saved field
             if(TempIsFullscreen == 1){
                 Screen.fullScreen = true;
@@ -284,19 +296,23 @@ public class PlayerSettings : MonoBehaviour
         bool isMatch2 = Regex.IsMatch(UsernameName, pattern2);
         bool isMatch3 = Regex.IsMatch(UsernameName, pattern3);
         
-
-        if(UsernameName == ""){
-            WarningText="Username is empty!";
-            SaveBtn.interactable = false;
-        }else if( !isMatch ){
-            WarningText = "Username contains illegal characters!";
-            SaveBtn.interactable = false;
-        }else if(isMatch2||isMatch3){
-            WarningText="Enter a valid name!";
-            SaveBtn.interactable = false;
-        }else{
+        if(!usernameInput_.activeSelf){
             WarningText = "";
             SaveBtn.interactable = true;
+        }else{
+            if(UsernameName == ""){
+                WarningText="Username is empty!";
+                SaveBtn.interactable = false;
+            }else if( !isMatch ){
+                WarningText = "Username contains illegal characters!";
+                SaveBtn.interactable = false;
+            }else if(isMatch2||isMatch3){
+                WarningText="Enter a valid name!";
+                SaveBtn.interactable = false;
+            }else{
+                WarningText = "";
+                SaveBtn.interactable = true;
+            }
         }
     }
 
@@ -310,7 +326,8 @@ public class PlayerSettings : MonoBehaviour
         PlayerPrefs.SetInt("Player Pref Graphic QI",TempQualityIndex);
         PlayerPrefs.SetInt("Player Pref Resolution Index",TempResolutionIndex);
         PlayerPrefs.SetInt("Player Pref IsFullscreen",TempIsFullscreen);
-        PlayerPrefs.SetInt("Settings Has Set",1);
+        PlayerPrefs.SetInt("Settings Init Was Set",1);
+        // PlayerPrefs.SetInt("Settings Has Set",1);
         PlayerPrefs.Save();
 
         // Initialise all temp variables after save
@@ -336,7 +353,7 @@ public class PlayerSettings : MonoBehaviour
         PlayerPrefs.SetInt("Player Pref Graphic QI",BufferQualityIndex);
         PlayerPrefs.SetInt("Player Pref Resolution Index",BufferResolutionIndex);
         PlayerPrefs.SetInt("Player Pref IsFullscreen",BufferIsFullscreen);
-        PlayerPrefs.SetInt("Settings Has Set",1);
+        // PlayerPrefs.SetInt("Settings Has Set",1);
         PlayerPrefs.Save();
 
         Start();

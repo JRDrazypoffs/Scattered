@@ -22,10 +22,10 @@ public class CheckSave : MonoBehaviour
 
         if(SettingsHasSet==true){
             LoadGameBtn.interactable = true;
-            SettingsBtn.interactable = true;
+            // SettingsBtn.interactable = true;
         }else{
             LoadGameBtn.interactable = false;
-            SettingsBtn.interactable = false;
+            // SettingsBtn.interactable = false;
         }
     }
 
@@ -44,7 +44,8 @@ public class CheckSave : MonoBehaviour
             }
             SaveAvailableWarningPanel.SetActive(true);
         }else{
-            PlayerPrefs.DeleteAll();
+            // PlayerPrefs.DeleteAll();
+            PlayerPrefs.DeleteKey("Settings Has Set");
             SceneManager.LoadSceneAsync("Start New Game Menu");
         }
 

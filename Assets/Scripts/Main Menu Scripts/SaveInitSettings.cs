@@ -24,6 +24,9 @@ public class SaveInitSettings : MonoBehaviour
     public TMP_Text WarningTextField;
     private string UsernameName;
     private string WarningText;
+
+    // check for previously saved settings
+    private static bool SettingsInitWasSet;
     
     void Start(){
         resolutionsStart = Screen.resolutions;
@@ -35,6 +38,8 @@ public class SaveInitSettings : MonoBehaviour
                 TempResolutionIndex = i;
             }
         }
+
+        SettingsInitWasSet = PlayerPrefs.HasKey("Settings Init Was Set");
     }
 
     void Update(){
@@ -61,8 +66,20 @@ public class SaveInitSettings : MonoBehaviour
 
         PlayerPrefs.SetString("Player Pref Username",UsernameInput.text);
         PlayerPrefs.SetInt("Player Pref Difficulty",difficultyDropdown.value);
-        PlayerPrefs.SetInt("Player Pref Resolution Index",TempResolutionIndex);
-        PlayerPrefs.SetInt("Player Pref IsFullscreen",1);
+        
+        if (SettingsInitWasSet==false){
+            // preset settings if no settings was initially set
+            PlayerPrefs.SetInt("Player Pref Resolution Index",TempResolutionIndex);
+            PlayerPrefs.SetInt("Player Pref IsFullscreen",1);
+        }else{
+            PlayerPrefs.SetFloat("Player Pref Master Volume",PlayerPrefs.GetFloat("Player Pref Master Volume"));
+            PlayerPrefs.SetFloat("Player Pref BGM Volume",PlayerPrefs.GetFloat("Player Pref BGM Volume"));
+            PlayerPrefs.SetFloat("Player Pref SFX Volume",PlayerPrefs.GetFloat("Player Pref SFX Volume"));
+            PlayerPrefs.SetInt("Player Pref Graphic QI",PlayerPrefs.GetInt("Player Pref Graphic QI"));
+            PlayerPrefs.SetInt("Player Pref Resolution Index",PlayerPrefs.GetInt("Player Pref Resolution Index"));
+            PlayerPrefs.SetInt("Player Pref IsFullscreen",PlayerPrefs.GetInt("Player Pref IsFullscreen"));
+        }
+
         PlayerPrefs.SetInt("Settings Has Set",1);
         PlayerPrefs.Save();
     }
