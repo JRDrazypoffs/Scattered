@@ -48,6 +48,7 @@ public class CheckSave : MonoBehaviour
             PlayerPrefs.DeleteKey("Settings Has Set");
             PlayerPrefs.DeleteKey("Unlocked Levels");
             PlayerPrefs.DeleteKey("Reached Index");
+            PlayerPrefs.DeleteKey("Player Pref First Clear Date");
             SceneManager.LoadSceneAsync("Start New Game Menu");
         }
 

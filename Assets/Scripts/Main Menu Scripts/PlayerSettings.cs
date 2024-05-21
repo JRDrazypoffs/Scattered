@@ -226,7 +226,6 @@ public class PlayerSettings : MonoBehaviour
             //     Debug.Log("In Set Resolutions Function");
             //     Debug.Log("In Set Resolutions Resolution Index "+i+" "+resolutions[i]);
             //     Debug.Log("Total Resolutions ="+resolutions.Length);
-
             // }
 
             // preset to previous saved field
@@ -256,10 +255,8 @@ public class PlayerSettings : MonoBehaviour
             // preset to previous saved field
             if(TempIsFullscreen == 1){
                 Screen.fullScreen = true;
-                // fullscreenToggle.isOn = true;
             }else{
                 Screen.fullScreen = false;
-                // fullscreenToggle.isOn = false;
             }
             // Allow user edit field
             Screen.fullScreen = IsFullscreen;

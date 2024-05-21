@@ -6,6 +6,7 @@ public class BGChanger : MonoBehaviour
 {
     public GameObject SearchBG;
     public GameObject HugBG;
+    public GameObject Badge;
 
     private int CurrentLevel;
     // Start is called before the first frame update
@@ -25,9 +26,11 @@ public class BGChanger : MonoBehaviour
         if(CurrentLevel >= 10 ){
             SearchBG.SetActive(false);
             HugBG.SetActive(true);
+            Badge.SetActive(true);
         }else{
             SearchBG.SetActive(true);
             HugBG.SetActive(false);
+            Badge.SetActive(false);
         }
     }
 }
