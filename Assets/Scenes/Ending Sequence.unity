@@ -8476,7 +8476,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Dialogue scene backgrounds
+  m_text: 'Dialogue scene background
+
+    & Deer character template'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 43f73ae4020645f468339d0976566f39, type: 2}
   m_sharedMaterial: {fileID: 7888502488835759401, guid: 43f73ae4020645f468339d0976566f39, type: 2}
