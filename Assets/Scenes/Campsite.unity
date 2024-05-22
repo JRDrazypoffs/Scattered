@@ -13131,7 +13131,7 @@ PrefabInstance:
     - target: {fileID: 2828996095563363928, guid: b0510dbbb1c292f43be49b33855ef84d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a3cc325ca892ae74e8d77b7a1ed7fa1c, type: 3}
+      objectReference: {fileID: 21300000, guid: 20ef5d4100bdc1d47b24ab7ce0a55f2b, type: 3}
     - target: {fileID: 3072077663874751510, guid: b0510dbbb1c292f43be49b33855ef84d, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -13327,7 +13327,7 @@ PrefabInstance:
     - target: {fileID: 4239893424107503825, guid: b0510dbbb1c292f43be49b33855ef84d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: cdd76a5110f08f54f9e01f99ef56eb65, type: 3}
+      objectReference: {fileID: 21300000, guid: 411a3ec8ed6227549a6102f1a3ed5be9, type: 3}
     - target: {fileID: 4286366866884145927, guid: b0510dbbb1c292f43be49b33855ef84d, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -13379,11 +13379,11 @@ PrefabInstance:
     - target: {fileID: 4883942746912265731, guid: b0510dbbb1c292f43be49b33855ef84d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: b8ee213d733824f42bc0850908504ef0, type: 3}
+      objectReference: {fileID: 21300000, guid: 0b0fa3c75b71cb74d86b9d5790df12b2, type: 3}
     - target: {fileID: 4894833597787374949, guid: b0510dbbb1c292f43be49b33855ef84d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 55841f10ab73a33418c366aa0c4b1110, type: 3}
+      objectReference: {fileID: 21300000, guid: 324261f2993773a4c99916d733ef30f9, type: 3}
     - target: {fileID: 4936655961323613677, guid: b0510dbbb1c292f43be49b33855ef84d, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -13543,7 +13543,7 @@ PrefabInstance:
     - target: {fileID: 6941355540554545078, guid: b0510dbbb1c292f43be49b33855ef84d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 0d204ffdd2ed47a40a81ad26db18fc60, type: 3}
+      objectReference: {fileID: 21300000, guid: eb704e18edb42c54b9d66f9c9262c1e7, type: 3}
     - target: {fileID: 6959245354113880605, guid: b0510dbbb1c292f43be49b33855ef84d, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -13595,7 +13595,7 @@ PrefabInstance:
     - target: {fileID: 7897682328895112350, guid: b0510dbbb1c292f43be49b33855ef84d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a9a42f45a6de71b4cae0bb8c1acd92c2, type: 3}
+      objectReference: {fileID: 21300000, guid: ae59ffd80bca77a44abc798c13111827, type: 3}
     - target: {fileID: 7994935775049087867, guid: b0510dbbb1c292f43be49b33855ef84d, type: 3}
       propertyPath: m_text
       value: Music Box Cylinder
@@ -13603,7 +13603,7 @@ PrefabInstance:
     - target: {fileID: 8048103178048955468, guid: b0510dbbb1c292f43be49b33855ef84d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: bab9e0d0f41ca6749ae1c049fdd7efe8, type: 3}
+      objectReference: {fileID: 21300000, guid: 74fd076224e2edd40b9201faf3803c44, type: 3}
     - target: {fileID: 8076117197635164038, guid: b0510dbbb1c292f43be49b33855ef84d, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -13731,11 +13731,11 @@ PrefabInstance:
     - target: {fileID: 8235068797755671535, guid: b0510dbbb1c292f43be49b33855ef84d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a365527be543e47468e2c4dfd059cad5, type: 3}
+      objectReference: {fileID: 21300000, guid: 1a53d6b817e03f34da9834b2a2b82267, type: 3}
     - target: {fileID: 8489541269248786427, guid: b0510dbbb1c292f43be49b33855ef84d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 0a2acf4b0c5d9524d85daa5d523b396f, type: 3}
+      objectReference: {fileID: 21300000, guid: 18affd6d15a94cf43bc87c9ead72b3cd, type: 3}
     - target: {fileID: 8535445633278446645, guid: b0510dbbb1c292f43be49b33855ef84d, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
