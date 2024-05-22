@@ -2588,18 +2588,18 @@ MonoBehaviour:
   m_text: "As you and Todd stepped into Central Park, nature's embrace enveloped
     you in a symphony of colors and scents. Todd, with determined strides, set up
     his easel, his eyes betraying a storm brewing beneath his artistic facade. With
-    each brushstroke, the weight of his anxieties echoed loudly. \"Who had left a
-    portrait painting of the mysterious deer on his easel at the library?\" and \"Is
-    it somehow connected to Kitt\u2019s disappearance?\"\r\n\r\nSurveying the park's
-    beauty, you couldn't help but be captivated by its boundless allure. The garden
-    burst forth with vibrant colors, while children's laughter added a joyful soundtrack
-    to the scene. Yet amidst the cacophony, a pang of longing gripped Todd's heart,
-    yearning for the simple joys of parenthood.\r\n\r\nAmidst the verdant splendor,
-    a grand greenhouse stood as a testament to nature's resilience, its glass walls
-    reflecting sunlight onto a thriving array of plants. Across the way, Chloe, the
-    gentle botanist, offered a comforting presence amidst Todd's inner turmoil. Despite
-    her imposing stature, her gentle smile radiated kindness, providing solace amidst
-    the storm within.\r\n"
+    each brush stroke, the weight of his anxieties echoed loudly. \"Who had left
+    a portrait painting of the mysterious deer on his easel at the library?\" and
+    \"Was it somehow connected to Kitt\u2019s disappearance?\"\r\n\r\nSurveying the
+    park's beauty, you couldn't help but be captivated by its boundless allure. The
+    garden burst forth with vibrant colors, while children's laughter added a joyful
+    soundtrack to the scene. Yet amidst the cacophony, a pang of longing gripped
+    Todd's heart, yearning for the simple joys of parenthood.\r\n\r\nAmidst the verdant
+    splendor, a grand greenhouse stood as a testament to nature's resilience, its
+    glass walls reflecting sunlight onto a thriving array of plants. Across the way,
+    Chloe, the gentle botanist, offered a comforting presence amidst Todd's inner
+    turmoil. Despite her imposing stature, her gentle smile radiated kindness, providing
+    solace amidst the storm within.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f1f09eaf0cd87194c95e4df28a7a508c, type: 2}
   m_sharedMaterial: {fileID: 5742468250113575934, guid: f1f09eaf0cd87194c95e4df28a7a508c, type: 2}

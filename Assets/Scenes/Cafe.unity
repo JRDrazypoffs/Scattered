@@ -1276,7 +1276,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3905499496176504096, guid: b0510dbbb1c292f43be49b33855ef84d, type: 3}
       propertyPath: m_text
-      value: Porcelain DIsh
+      value: Porcelain Dish
       objectReference: {fileID: 0}
     - target: {fileID: 4050527990399925173, guid: b0510dbbb1c292f43be49b33855ef84d, type: 3}
       propertyPath: m_text
